@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_temp
 title:  The path 2016
 date:   2016-08-23 16:03:30 +0300
 image:  05.jpg

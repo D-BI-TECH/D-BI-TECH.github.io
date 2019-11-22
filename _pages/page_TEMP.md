@@ -1,7 +1,7 @@
 ---
 layout: post_TEMP
 title: 测试页
-permalink: /styleguide/
+permalink: /page_TEMP/
 image: 11.jpg
 ---
 

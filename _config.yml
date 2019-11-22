@@ -35,7 +35,7 @@ netease_comment: false
 gitalk:
     enable: true
     owner: DavisZHANG-BlogOnly
-    repo: D-BI-TECH.github.io
+    repo: F
     clientID: 0cafbeac3e41c55928b0
     clientSecret: f1e390e070e04539e1c6254ff4647ad95d9068d3
     admin: DavisZHANG-BlogOnly

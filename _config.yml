@@ -34,11 +34,11 @@ netease_comment: false
 
 gitalk:
     enable: true
-    owner: ***zibi
-    repo: *****.github.io
-    clientID: ****c08c2ec52afbcb30
-    clientSecret: *******79e7b42cf782a1d2d1b5a410d27c5ab57
-    admin: **zibi
+    owner: D-BI-TECH
+    repo: D-BI-TECH.github.io
+    clientID: 0cafbeac3e41c55928b0
+    clientSecret: f1e390e070e04539e1c6254ff4647ad95d9068d3
+    admin: D-BI-TECH
 
 
 

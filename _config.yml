@@ -23,7 +23,7 @@ pinterest: https://www.pinterest.com/
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+# disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Disqus settings
 

@@ -1,5 +1,5 @@
 ---
-layout: page_TEMP
+layout: post_TEMP
 title: 测试页
 permalink: /styleguide/
 image: 11.jpg

@@ -25,10 +25,22 @@ pinterest: https://www.pinterest.com/
 # Comment Section (Disqus)
 disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
+# Disqus settings
 
-#-------------------------------
-# Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+# disqus_username: Lucy
+
+# Netease settings
+netease_comment: false
+
+gitalk:
+    enable: true
+    owner: ***zibi
+    repo: *****.github.io
+    clientID: ****c08c2ec52afbcb30
+    clientSecret: *******79e7b42cf782a1d2d1b5a410d27c5ab57
+    admin: **zibi
+
+
 
 
 #-------------------------------

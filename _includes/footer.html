@@ -17,7 +17,18 @@
 		{% if site.RSS %}
                     <li>
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                            <i class="fas fa-rss"></i>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                {% endif %}
+                {% if site.linkedin %}
+                    <li>
+                        <a target="_blank" href="{{ site.linkedin }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </li>
                 {% endif %}
@@ -25,8 +36,16 @@
                     <li>
                         <a target="_blank" href="{{ site.zhihu }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+               {% endif %}
+	       {% if site.playstation %}
+                    <li>
+                        <a target="_blank" href="{{ site.playstation }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fab fa-playstation"></i>
                             </span>
                         </a>
                     </li>

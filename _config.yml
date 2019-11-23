@@ -17,18 +17,15 @@ author-avatar: 09.jpg
 # Contact links
 linkedin:  https://www.linkedin.com/in/davis-zhang/ 
 zhihu:   https://zhihu.com/people/zhang-zhe-hong-01/posts 
-playstation: https://my.playstation.com/profile/KEID-MG
+# playstation: https://my.playstation.com/profile/KEID-MG
 wordpress: https://davisisland.wordpress.com/
 
 
 #-------------------------------
-# Comment Section (Disqus)
-# disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # RSS
 RSS: true
 
-# disqus_username: Lucy
 
 # Netease settings
 netease_comment: false

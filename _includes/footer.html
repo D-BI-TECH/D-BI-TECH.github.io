@@ -8,13 +8,13 @@
           </h2>
 	  <div class="feed">
 		{% if site.RSS %}
-                    <li>
+                    
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
-                    </li>
+                    
                 {% endif %}
                 {% if site.linkedin %}
                     
@@ -26,22 +26,22 @@
                     
                 {% endif %}
                 {% if site.zhihu %}
-                    <li>
+                    
                         <a target="_blank" href="{{ site.zhihu }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
                             </span>
                         </a>
-                    </li>
+                    
                {% endif %}
 	       {% if site.wordpress %}
-                    <li>
+                    
                         <a target="_blank" href="{{ site.wordpress }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
-                    </li>
+                    
                {% endif %}
 	  </div>
        </div>

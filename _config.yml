@@ -25,7 +25,8 @@ pinterest: https://www.pinterest.com/
 # Comment Section (Disqus)
 # disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
-# Disqus settings
+# RSS
+RSS: true
 
 # disqus_username: Lucy
 

@@ -9,7 +9,7 @@ url: "https://d-bi-tech.github.io/"
 
 #-------------------------------
 # About Section
-author-name:   Natali Anderson
+author-name:   Davis ZHANG
 author-avatar: 09.jpg
 
 
@@ -47,7 +47,7 @@ gitalk:
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: UA-153204823-1
 
 
 #-------------------------------

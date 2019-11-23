@@ -80,22 +80,18 @@ layout: default
 				<div class="post-navigation">
 					{% if page.previous.url %}
 					<a href="{{ site.baseurl }}{{page.previous.url}}" class="prev">
-						<div class="post-nav-arrow"><i class="ion ion-ios-arrow-round-back"></i> 上一篇</div>
+						<div class="post-nav-arrow"><i class="fa fa-long-arrow-left"></i> 上一篇</div>
 						<h2 class="post-nav-title">{{page.previous.title}}</h2>
 					</a>
 					{% endif %} {% if page.next.url %}
 					<a href="{{ site.baseurl }}{{page.next.url}}" class="next">
-						<div class="post-nav-arrow">下一篇 <i class="ion ion-ios-arrow-round-forward"></i></div>
+						<div class="post-nav-arrow">下一篇 <i class="fa fa-long-arrow-right"></i></div>
 						<h2 class="post-nav-title">{{page.next.title}}</h2>
 					</a>
 					{% endif %}
 				</div>
 				
-                                {% if site.netease_comment %}
-                                <!-- 网易云跟帖 评论框 start -->
-                                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-                                <!-- 网易云跟帖 评论框 end -->
-                                {% endif %}
+
                 
                                 <!--   gitalk       -->
                                 {% if site.gitalk %}

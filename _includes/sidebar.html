@@ -24,26 +24,11 @@
   {% endif %}
 
 
-  <div class="widget widget-newsletter">
-    <h3 class="widget-title">订阅本站</h3>
-    <div class="newsletter-subtitle">获取本站最新博客</div>
-    <div class="newsletter-text">在第一时间通过E-mail推送.</div>
-    <form class="c-newsletter-form validate" action="{% if site.mailchimp %}//{{site.mailchimp}}{% else %}#{% endif %}" method="POST"
-      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-      <div class="newsletter-group">
-        <div class="newsletter-group-top">
-          <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
-          <i class="email-icon ion ion-ios-mail"></i>
-          <input class="newsletter-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="E-mail">
-        </div>
-        <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="订阅">
-      </div>
-    </form>
-  </div>
+
 
 
   <div class="widget widget-tags">
-    <h3 class="widget-title">标签云</h3>
+    <h3 class="widget-title">标签目录</h3>
     {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{%
     endcapture %} {% assign tag_words = site_tags | split:',' | sort %}
     <ul class="tag-list list-reset">

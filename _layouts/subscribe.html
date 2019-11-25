@@ -3,12 +3,31 @@ layout: default
 ---
 
 
-<div class="container">
-    <div class="post-image-box">
-	    <div class="post-image" style="background-image: url({{"/img/" | prepend: site.baseurl | append : page.image}})"></div>
-    </div>
-	<div class="row">
+<!--//添加评论系统-->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
 
+<div class="container">
+	<div class="row">
+		<article class="col col-12 col-t-12 post">
+			<div class="post-content">
+
+				<div class="post-head">
+					{% if page.tags.size >= 1 %}
+					{% endif %}
+					<p><img src="{{site.baseurl}}/img/duang.png" width="1781" height="417"/></p>
+					<!--<h1 class="post-title">{{ page.title | escape }}</h1>-->
+					<div class="post-info">
+					</div>
+				</div>
+
+				<div class="post-body">
 					{{ content }}
+				</div>
+			</div>
+
+
+	</article> <!-- /.post -->
 	</div>
 </div>
+

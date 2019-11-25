@@ -52,24 +52,33 @@ layout: default
 							<li class="share-item">
 								<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-								title="Share on Facebook" rel="nofollow">
+								title="分享到 Facebook" rel="nofollow">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
 					
-							<li class="share-item">
-								<a class="share-twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-								title="Share on Twitter" rel="nofollow">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
 					
 							<li class="share-item">
 								<a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title | uri_escape }}&summary={{ page.description | uri_escape }}&source={{ site.title | uri_escape }}"
 								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-								title="Share on LinkedIn" rel="nofollow">
+								title="分享到 LinkedIn" rel="nofollow">
 									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+
+							<li class="share-item">
+								<a class="share-weibo" href="http://service.weibo.com/share/share.php?&url={{ site.url }}{{ page.url }}&title={{page.title}}"
+								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+								title="分享至微博" rel="nofollow">
+									<i class="fa fa-weibo"></i>
+								</a>
+							</li>
+
+							<li class="share-item">
+								<a class="share-qzone" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ site.url }}{{ page.url }}&title={{page.title}}"
+								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+								title="分享至QQ空间" rel="nofollow">
+								    <i class="fa fa-qq"></i>
 								</a>
 							</li>
 					

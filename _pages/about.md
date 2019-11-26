@@ -33,6 +33,6 @@ permalink: /about/
 E-mail: daviszhang@189.cn  
 若有疑问，反馈或行业交流也可点击页面右下角"知"字经由知乎私信我。
 
-<img src="{{site.baseurl}}/img/cert.jpg" width="20%">
+<img src="{{site.baseurl}}/img/cert.jpg" width="30%">
 
 

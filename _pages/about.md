@@ -25,6 +25,7 @@ permalink: /about/
 - SSRS Report Builder
 - Power BI
 - Power Query
+- Power Pivot
 - SQL Server
 - Office 365
 

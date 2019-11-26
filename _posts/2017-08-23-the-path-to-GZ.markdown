@@ -2,6 +2,7 @@
 layout: post_temp
 title:  The path GZ
 date:   2016-08-23 16:03:30 +0300
+author-name: Davis ZHANG
 image:  05.jpg
 tags:   Life
 ---

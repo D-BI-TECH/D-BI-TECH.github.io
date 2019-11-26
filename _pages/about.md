@@ -5,18 +5,32 @@ permalink: /about/
 ---
 
 
-My name is Natali Anderson. I'm an actress. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies. Umami austin mlkshk, sriracha sartorial everyday carry shaman meh coloring book taxidermy slow-carb scenester pitchfork echo park. Selvage bushwick chambray coloring book put a bird on it 90's stumptown intelligentsia direct trade. Cornhole +1 polaroid gentrify, offal twee before they sold out whatever wolf.
+关于本站
+-------
 
-#### Austin scenester...
-<small>2008 - 2017</small>
+本站主要用于本人发表BI，数据处理分析以及可视化等相关原创内容  目前暂集中在微软BI,  
+初衷仅仅是整合个人的历史博客，现希望未来能在本站发表更多关于数据的有趣知识。  
+本站亦接受投稿，投稿方式及其他相关信息见"[投稿]({{site.baseurl}}/contribute/)"页。  
+"DUANG! 砸开数据集!"是本站的标语及基本精神，代表对数据探索的热爱与执着。    
+本站使用Github发布，由Davis ZHANG(本人)建立并维护，并感谢由[Artem Sheludko](https://github.com/artemsheludko)提供的Jeklly主题！  
 
-Offal post-ironic before they sold out mixtape you probably haven't heard of them. Pinterest roof party umami everyday carry street art. Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Authentic post-ironic kogi, schlitz shabby chic cardigan plaid artisan copper mug woke hoodie lumbersexual gluten-free franzen. Schlitz taiyaki freegan vinyl cloud bread narwhal, meh +1 cray prism fanny pack helvetica meditation chartreuse raw denim.
+关于站长
+-------
 
-#### Vinyl hexagon before...
-<small>2001 - 2008</small>
+本人是一名BI工程师及数据分析爱好者  
+<small>（同时也是摄影，长跑爱好者及SWITCH & PlayStation玩家）<small>  
 
-Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Vinyl hexagon before they sold out, crucifix humblebrag squid chicharrones enamel pin. Iceland humblebrag farm-to-table, lyft pug tilde irony.
-Hot chicken shoreditch tousled listicle, actually meggings vape. Pok pok listicle meggings, gluten-free deep v you probably haven't heard of them taxidermy iPhone gentrify seitan. Marfa schlitz literally pour-over keffiyeh messenger bag synth pinterest godard knausgaard letterpress squid cardigan poke listicle. 
+目前主要领域为：
+- SSAS Tabular
+- SSRS Report Builder
+- Power BI
+- Power Query
+- SQL Server
+- Office 365
+
+本人具有微软BI部署经验，若有合作需求，欢迎由以下邮箱联系本人：  
+E-mail: daviszhang@189.cn  
+若有疑问，反馈或行业交流也可点击页面右下角"知"字经由知乎私信我。
 
 ![]({{site.baseurl}}/img/cert.jpg)
 

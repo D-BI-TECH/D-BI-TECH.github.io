@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX实现20/80(帕累托)分析
 date:   2019-03-19 14:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  DAX虚拟连接函数TREATAS()用法介绍
 date:   2019-03-27 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 

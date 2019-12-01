@@ -2,7 +2,7 @@
 layout: post
 title:  使用Charticulator自制可视化控件
 date:   2019-06-02 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,可视化]
 ---
 

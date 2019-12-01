@@ -2,7 +2,7 @@
 layout: post
 title:  Power BI分析客户购买行为洞察产品潜力
 date:   2019-06-14 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX,数据分析]
 ---
 

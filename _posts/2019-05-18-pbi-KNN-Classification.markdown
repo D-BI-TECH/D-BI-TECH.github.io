@@ -2,7 +2,7 @@
 layout: post
 title:  DAX实现K近邻(KNN)分类算法
 date:   2019-05-18 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 

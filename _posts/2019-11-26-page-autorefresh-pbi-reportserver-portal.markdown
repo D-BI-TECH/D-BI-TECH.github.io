@@ -2,7 +2,7 @@
 layout: post
 title:  PBI Report Server报表页面自动刷新
 date:   2019-11-26 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [PBI Report Server,SSRS]
 ---
 

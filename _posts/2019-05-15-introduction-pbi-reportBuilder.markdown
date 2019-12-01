@@ -2,7 +2,7 @@
 layout: post
 title:  PBI Report Builder 简介
 date:   2019-05-15 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,SSRS]
 ---
 

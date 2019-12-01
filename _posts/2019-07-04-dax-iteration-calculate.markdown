@@ -2,7 +2,7 @@
 layout: post
 title:  解决DAX中数据的循环迭代问题
 date:   2019-07-04 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Power Pivot,SSAS,DAX]
 ---
 

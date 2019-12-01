@@ -2,7 +2,7 @@
 layout: post
 title:  利用Microsoft Flow增强PBI使用效率
 date:   2019-06-11 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,Microsoft Flow,Office 365]
 ---
 

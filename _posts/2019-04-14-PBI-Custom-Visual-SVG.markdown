@@ -2,7 +2,7 @@
 layout: post
 title:  Power BI之SVG自定义可视化
 date:   2019-04-14 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,可视化]
 ---
 

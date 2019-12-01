@@ -2,7 +2,7 @@
 layout: post
 title:  Power BI 复合饼图
 date:   2019-06-30 06:03:50 +0000
-image:  04.jpg
+image:  01.jpg
 tags:   [Power BI,可视化]
 ---
 

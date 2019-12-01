@@ -16,7 +16,8 @@ tags:   [Power BI,DAX,统计学]
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175156208.png)
 
 DAX无法进行矩阵运算，因此回归公式参照克莱姆法则(不是史莱姆)。以二元回归为例，其目的是通过对现有数据集的计算，得出其中的β0，β1及β2的最优解，公式推导如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175233356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175233356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 依据此公式，在DAX中进行运算，即可完成回归。
 
@@ -24,13 +25,14 @@ DAX无法进行矩阵运算，因此回归公式参照克莱姆法则(不是史�
 -------
 数据集下载自Tableau论坛,本案例使用的数据集为"Superstore.xls"
 主表结构如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175248266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175256147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175248266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175256147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 其中[日期](Order Date)将做为首个自变量，[销量](Sales)将作为因变量(即预测目标)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112817530890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112817530890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 四、执行二元回归
 -------
@@ -92,7 +94,7 @@ Result
 
 结果如下图红线所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175318184.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175318184.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 五、评估回归模型
 -------
@@ -205,11 +207,11 @@ Result * (1-1/R) --乘以斜率参数
 
 执行效果如下(注：调整后的模型如深蓝色曲线所示，RMSE和R^2也改为针对该模型的评估值)：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175409279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175409279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 至此，我们完成了对该二元线性回归模型的手动调优，我们可以调节其中的参数，然后观察评估结果。本文到此本该结束，但是后来我觉得这样调整有点盲目，调整参数应该有一个直观科学的参考，这样才能提高使用效率。因此我做了一个模型优化参考图，本文以第一个参数(即日期)为例，以该参数作为自变量(X轴)，R^2和RMSE作为因变量(Y轴)，用以直观地对模型调优提供参考：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175420299.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128175420299.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 **注：由于RMSE远大于R^2,为使RMSE和R^2更易于观察，图中的RMSE值压缩至原来的十分之一。当然你也可以考虑使用双轴图，但目前来讲PowerBI自带的双轴图控件并没有Tooltips*
 

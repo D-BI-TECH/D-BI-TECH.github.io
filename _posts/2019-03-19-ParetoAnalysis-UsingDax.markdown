@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX实现20/80(帕累托)分析
 date:   2019-03-19 14:03:50 +0000
-image:  01.jpg
+image:  02.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 
@@ -18,7 +18,7 @@ tags:   [Power BI,Power Pivot,DAX]
 ## 过程
 数据还是原来的：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190329171639445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190329171639445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 <big>**1.实现对产品的AB分类，找出总共贡献利润占总利润80%左右的那些产品**
 
@@ -119,9 +119,9 @@ tags:   [Power BI,Power Pivot,DAX]
 上方我创建了一个名为summ的虚拟表，它以客户为维度，包括其中的一个虚拟列“cccc",然后使用topn得出贡献销售额（销量或利润）排名前20%的所有客户，赋值给变量”top_table",然后使用CALCULATE(sumx(top_table,[cccc]))得出排名前20%的客户所贡献的销售额（销量或利润）,再除以总销售额（销量或利润）最终得出结果。（*注：这里之所以使用虚拟表summ而非建立一个真实存在的客户表，是因为它完全动态，并且有更好的代码运行效率，同时我们也避免了额外建立表格关系这样的麻烦*）
 效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112814012443.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128140133139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128140139943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112814012443.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128140133139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128140139943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 到这里，可能有人会说，我要的其实不仅是这个占比，重要的是要把这些排名前20%的客户找出来。这个问题其实反而不用那么麻烦，尽管对上面的代码做一点修改也可以做到，但代码没必要那么冗长，这里只需直接使用TOPN()筛选一下再算行数即可：
 

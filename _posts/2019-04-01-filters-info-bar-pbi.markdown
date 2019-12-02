@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX构建筛选信息栏
 date:   2019-04-01 06:03:50 +0000
-image:  01.jpg
+image:  08.jpg
 tags:   [Power BI,DAX]
 ---
 
@@ -14,16 +14,16 @@ tags:   [Power BI,DAX]
 
 本案例目标是在对下表进行筛选时，让信息栏显示当前"城市"、"子类别"及"月份"的筛选信息：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331160255866.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331160255866.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 ## 过程
 实现这个功能实际上不需要自己写代码，因为如果你有使用过[DAX Studio](https://daxstudio.org/),你会发现这个功能已经被内置其中，如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331224701278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331224701278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 代码会在右方自动生成，可直接根据你的个人需要进行修改，快捷省时：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331224812335.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190331224812335.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 对于本案例我们只需要"城市"、"子类别"及"月份"的筛选信息，如下：
 
@@ -62,7 +62,7 @@ tags:   [Power BI,DAX]
 
 效果如图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112814334849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019112814334849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 这里面，需要指出的是，UNICHAR(13) & UNICHAR(10)在这里相当于换行符（换行+回车），因此你可以像如下这样，设置换行的条件，如下修改后的公式(以“城市”为例，其他同)，只有当该行数据字符长度超过20时才会换行：
 （*有关于[UNICHAR](https://docs.microsoft.com/zh-hk/dax/unichar-function-dax),可以点击[这里](https://en.wikipedia.org/wiki/List_of_Unicode_characters)查看Unicode字符列表，还有很多待挖掘的有用字符*）
@@ -83,7 +83,7 @@ tags:   [Power BI,DAX]
 
 这样，只有当某个筛选信息长度超过20个字符时，才会进行换行操作。根据报表实际情况设置宽度限制以使得信息栏能够充分利用空间。如下，城市字段的筛选信息超过了限制长度，因此其后被加上换行符：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128144449725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128144449725.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 最后，还需要改进的是，对于月份这种时间型筛选，我们需要一种更人性化的阅读体验，比如，选择1月、2月、3月、4月，对应显示1 - 4月(或Jan - Apr):
 
@@ -163,7 +163,7 @@ tags:   [Power BI,DAX]
 
 最后效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128143118268.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128143118268.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 ## 其他
 本案例进一步展示了DAX语法的灵活性。关于本文，需要感谢BI大神Marco在此前发的[Blog](https://www.sqlbi.com/articles/displaying-filter-context-in-power-bi-tooltips/)，他在这篇文章里介绍了将筛选上下文显示于特定控件的Tooltips的方法，这也是本案例的思路来源。

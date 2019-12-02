@@ -2,7 +2,7 @@
 layout: post
 title:  PBI Report Server部署与配置详解
 date:   2019-11-18 06:03:50 +0000
-image:  01.jpg
+image:  08.jpg
 tags:   [PBI Report Server,SSRS]
 ---
 

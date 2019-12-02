@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX强化图表交互力
 date:   2019-03-23 09:03:50 +0300
-image:  01.jpg
+image:  03.jpg
 tags:   [Power BI,DAX]
 ---
 
@@ -17,10 +17,10 @@ tags:   [Power BI,DAX]
 ## 过程
 数据与前文相同，比较简单，第一个目标就是用户可以选择下方红框的任意字段，来让图表显示对应字段的数据。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190323120443711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190323120443711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 也许会有一个疑问,DAX在执行计算时，基于筛选上下文和行上下文，而没有“列上下文”，怎么跨列筛选呢？实际上，你会发现如果把这个所谓的列上下文用行上下文的形式表现出来就可以解决问题了，如下：
 
-![*上表的“数量”后来改名叫“销售量”，懒得换图了*](https://img-blog.csdnimg.cn/20190323122512556.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![*上表的“数量”后来改名叫“销售量”，懒得换图了*](https://img-blog.csdnimg.cn/20190323122512556.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 通过设置变量“SELECTED"获取被筛选的值，然后利用SWITCH计算与该值相对应的度量值：
 
@@ -39,7 +39,7 @@ tags:   [Power BI,DAX]
 
 效果如下（*看来这份数据在16年有几次严重的亏损*）：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127163129207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127163129207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 - [x] 可以让图表根据用户的选择，显示对应的字段的数据（跨列筛选）
 - [ ] 让用户可以自由选择需要显示或需要移除的字段
@@ -83,7 +83,7 @@ tags:   [Power BI,DAX]
 
 效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127164000852.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127164000852.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 - [x] 可以让图表根据用户的选择，显示对应的字段的数据（跨列筛选）
 - [x] 让用户可以自由选择需要显示或需要移除的字段
@@ -116,7 +116,7 @@ tags:   [Power BI,DAX]
 
 最后，用户就可以在下方红框处输入想要移动的项数，从而改变移动平均销售额的计算，效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127164420111.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127164420111.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 - [x] 可以让图表根据用户的选择，显示对应的字段的数据（跨列筛选）
 - [x] 让用户可以自由选择需要显示或需要移除的字段

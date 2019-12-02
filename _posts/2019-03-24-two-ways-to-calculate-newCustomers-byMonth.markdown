@@ -2,7 +2,7 @@
 layout: post
 title:  两种方法计算每月开发的新客户数量
 date:   2019-03-24 20:03:50 +0000
-image:  01.jpg
+image:  06.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 
@@ -11,7 +11,7 @@ tags:   [Power BI,Power Pivot,DAX]
 ## 过程
 数据表(*部分*)如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190324214558811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190324214558811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 <big>**方法一**
 
@@ -42,7 +42,7 @@ tags:   [Power BI,Power Pivot,DAX]
 效果如下：
 
 （*此图未指定年份，仅用于展示效果*）
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127175115267.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127175115267.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 <big>**方法二**
 
@@ -68,7 +68,7 @@ tags:   [Power BI,Power Pivot,DAX]
 
 效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127175556322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191127175556322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 ## 其他
 

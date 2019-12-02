@@ -2,7 +2,7 @@
 layout: post
 title:  PowerApps助力PowerBI实现数据写回
 date:   2019-08-01 06:03:50 +0000
-image:  01.jpg
+image:  07.jpg
 tags:   [Power BI,PowerApps,Office 365]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  DAX虚拟连接函数TREATAS()用法介绍
 date:   2019-03-27 06:03:50 +0000
-image:  01.jpg
+image:  07.jpg
 tags:   [Power BI,Power Pivot,DAX]
 ---
 
@@ -28,11 +28,11 @@ tags:   [Power BI,Power Pivot,DAX]
 
 结果如下(*注意：下图城市这一字段来自和主表没有任何关联的副表*)：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128101346707.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128101346707.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 但当我们增加副表的[客户ID]做筛选时，对应的数据却没有被正确计算，这是因为[客户ID]并没有利用Treatas和主表建立关联（*但可以使用[地区]这一字段，因为它是[城市]的上层字段*)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128101907432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128101907432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 解决方法如下：
 
@@ -43,7 +43,7 @@ tags:   [Power BI,Power Pivot,DAX]
 >    'Data'[城市],Data[客户 ID]))
 >```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128102025758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191128102025758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 ## 其他
 Treatas()之所以可以实现虚拟连接，是因为它可以把本表指定列的筛选上下文属性传递至目标表,因而目标表可以获得对应的筛选能力（*如本例，城市和客户ID字段的筛选上下文被传递至SUMMARIZE后的副表，因此副表的对应列可以筛选本表的指定值*）

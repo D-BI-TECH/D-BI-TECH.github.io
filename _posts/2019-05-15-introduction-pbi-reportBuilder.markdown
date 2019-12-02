@@ -60,6 +60,7 @@ Report Builder不仅可以使用SQL获取数据库数据，而且还可以调用
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190515154032581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
 
 **5.发布报表**
+
 截至目前的2019年4月版本的Report Builder尚未提供发布到服务器的选项(*期待未来的更新*), 但用户可以在Power BI Service把Report Builder报表文件上传到Premium空间，也可以直接上传到Power BI Report Server
 (*本文以介绍为主，使用教程不做详细介绍，Power BI Report Builder截至今年5月15日还没有官方介绍文档，详情可参考此SSRS Report Builder教程*）
 

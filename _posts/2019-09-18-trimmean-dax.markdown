@@ -14,13 +14,13 @@ DAX中有多种求均值的方法。一些最流行的方法是平均值（[AVER
 
 如果您不熟悉这个函数，我强烈建议您阅读[文档](https://support.office.com/en-us/article/TRIMMEAN-function-D90C9878-A119-4746-88FA-63D988F511D3)。简而言之，该函数计算平均值，同时从尾部排除用户指定的值百分比。
 
-*（译注：此处的"尾部"指数据集的上下两端）*
+<small>*（译注：此处的"尾部"指数据集的上下两端）*</small>
 
 #### 现存的解决方案
 
 我首先查阅的是DAX Patterns，那里通常是能够提供现成解决方案的很好的来源。不幸的是，并没有关于TRIMMEAN的内容，所以我通过谷歌了解到该问题迄今为止并未充分得到解决。
 
-来自Greg Baldini的解决方案需要您预先知道要排除的值，但如果您希望公式能够处理包含重复值的数据，则可能会出现问题。 另一名微软MVP--Imke Feldmann，她的解决方案在多数场景下都没有问题，但无法处理位于边界的重复值。这是因为在DAX中，没有用户可以访问的行号的概念，所以这个问题需要不同的方法。
+来自[Greg Baldini的解决方案](https://social.msdn.microsoft.com/Forums/en-US/95ace0a4-1fe7-421f-a345-69319864141f/calculate-trimmed-mean-in-dax-mean)需要您预先知道要排除的值，但如果您希望公式能够处理包含重复值的数据，则可能会出现问题。 另一名微软MVP--Imke Feldmann，[她的解决方案](https://social.msdn.microsoft.com/Forums/vstudio/en-US/e193338e-dbbe-462b-99d6-1bd26a033227/how-can-i-calculate-the-trimmean-formula-in-powerpivot-excel-2010-)在多数场景下都没有问题，但无法处理位于边界的重复值。这是因为在DAX中，没有用户可以访问的行号的概念，所以这个问题需要不同的方法。
 
 *（译注：实现TRIMMEAN的另一种方法是使用TOPN嵌套TOPN，但正如作者所说，这依然无法处理位于边界的重复值，这在具有重复值的数据集中影响了计算精度）*
 
@@ -28,7 +28,7 @@ DAX中有多种求均值的方法。一些最流行的方法是平均值（[AVER
 
 为了使用以下解决方案，需要根据下面的注释替换为你使用的字段：
 
-*（译注：此公式使用了ERROR函数，迄今为止，该函数适用于Power BI及SSAS 2017及以上版本，但在Power Pivot中暂不受支持）*
+<small>*（译注：此公式使用了ERROR函数，迄今为止，该函数适用于Power BI及SSAS 2017及以上版本，但在Power Pivot中暂不受支持）*</small>
 
 >```Python
 TrimMean = 
@@ -98,7 +98,7 @@ RETURN
     Result
 >```
 
-*（译注：此公式方法巧妙，大于或小于百分比边界的值的TrimmedCounts强制设为0，因此Numerator在求和时通过乘以TrimmedCounts忽视了所有边界以外数据的求和值，然后将剩余求和值Numerator除以剩余值总项数Denominator得出均值。）*
+<small>*（译注：此公式方法巧妙，大于或小于百分比边界的值的TrimmedCounts强制设为0，因此Numerator在求和时通过乘以TrimmedCounts忽视了所有边界以外数据的求和值，然后将剩余求和值Numerator除以剩余值总项数Denominator得出均值。）*</small>
 
 这个公式相当复杂，但希望它很容易使用。上面的公式只适用于物理列。如果要使用类似TRIMMEANX的逻辑，那么Counts变量可能如下所示：
 

@@ -2,7 +2,7 @@
 layout: post
 title:  在多对一关系中正确计算数据
 date:   2019-03-19 10:03:50 +0300
-image:  01.jpg
+image:  02.jpg
 tags:   [Power BI,Power Pivot,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg

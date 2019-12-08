@@ -2,7 +2,7 @@
 layout: post
 title:  PBI Report Server建立报表警报机制
 date:   2019-12-02 06:03:50 +0000
-image:  11.jpg
+image:  03.jpg
 tags:   [PBI Report Server,SQL Server]
 author-name: Davis ZHANG
 author-image: Davis.jpg

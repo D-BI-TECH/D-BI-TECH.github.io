@@ -2,7 +2,7 @@
 layout: post
 title:  DAX波士顿矩阵可视化实现
 date:   2019-04-19 06:03:50 +0000
-image:  11.jpg
+image:  13.jpg
 tags:   [Power BI,DAX,可视化]
 author-name: Davis ZHANG
 author-image: Davis.jpg

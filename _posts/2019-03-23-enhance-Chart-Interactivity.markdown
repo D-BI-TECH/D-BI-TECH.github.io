@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX强化图表交互力
 date:   2019-03-23 09:03:50 +0300
-image:  03.jpg
+image:  06.jpg
 tags:   [Power BI,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg

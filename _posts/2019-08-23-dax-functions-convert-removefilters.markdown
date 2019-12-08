@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  DAX函数：CONVERT和REMOVEFILTERS
+title:  DAX：CONVERT与REMOVEFILTERS
 date:   2019-08-23 06:03:50 +0000
-image:  08.jpg
+image:  12.jpg
 tags:   [Power BI,DAX]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg

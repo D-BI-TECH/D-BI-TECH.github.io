@@ -2,7 +2,7 @@
 layout: post
 title:  关于Power BI Dataflow
 date:   2019-01-22 07:03:50 +0000
-image:  08.jpg
+image:  01.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg

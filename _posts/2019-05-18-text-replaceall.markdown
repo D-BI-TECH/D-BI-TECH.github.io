@@ -2,7 +2,7 @@
 layout: post
 title:  M函数：Text.ReplaceAll
 date:   2019-05-18 07:03:50 +0000
-image:  08.jpg
+image:  03.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg

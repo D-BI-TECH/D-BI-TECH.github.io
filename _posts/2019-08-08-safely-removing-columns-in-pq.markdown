@@ -2,7 +2,7 @@
 layout: post
 title:  在PowerQuery安全地移除字段
 date:   2019-08-08 06:03:50 +0000
-image:  08.jpg
+image:  11.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg

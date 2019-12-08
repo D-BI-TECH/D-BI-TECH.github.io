@@ -2,7 +2,7 @@
 layout: post
 title:  DAX多元线性回归与参数调优
 date:   2019-04-06 06:03:50 +0000
-image:  09.jpg
+image:  11.jpg
 tags:   [Power BI,DAX,统计学]
 author-name: Davis ZHANG
 author-image: Davis.jpg

@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX构建筛选信息栏
 date:   2019-04-01 06:03:50 +0000
-image:  08.jpg
+image:  10.jpg
 tags:   [Power BI,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg

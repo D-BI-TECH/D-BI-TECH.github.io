@@ -2,7 +2,7 @@
 layout: post
 title:  DAX计算重复购买率与新老客自动分类
 date:   2019-03-24 12:03:50 +0300
-image:  05.jpg
+image:  07.jpg
 tags:   [Power BI,Power Pivot,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg

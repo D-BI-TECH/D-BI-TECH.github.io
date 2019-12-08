@@ -2,7 +2,7 @@
 layout: post
 title:  用DAX实现TRIMMEAN
 date:   2019-09-19 06:03:50 +0000
-image:  08.jpg
+image:  13.jpg
 tags:   [Power BI,SSAS,DAX]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg

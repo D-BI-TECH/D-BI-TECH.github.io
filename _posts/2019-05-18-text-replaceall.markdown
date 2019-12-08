@@ -25,10 +25,10 @@ author-image: Daniil.jpg
 <div class="table-container">
     <table>
         <tr><th>文本</th><tr>
-        <tr><td>the cat sat on the mat</td><tr>
-        <tr><td>the cat sat next to the dog</td><tr>
-        <tr><td>the dog chased the cat</td><tr>
-        <tr><td>the dog sat on the mat</td><tr>
+        <tr><td>the cat sat on the mat</td></tr>
+        <tr><td>the cat sat next to the dog</td></tr>
+        <tr><td>the dog chased the cat</td></tr>
+        <tr><td>the dog sat on the mat</td></tr>
     </table>
 </div>
 
@@ -51,11 +51,11 @@ in
 
 <div class="table-container">
   <table>
-    <tr><th>被替换词</th><th>替换为</th><tr>
-    <tr><td>cat</td><td>bear</td><tr>
-    <tr><td>mat</td><td>chair</td><tr>
-    <tr><td>dog</td><td>dragon</td><tr>
-    <tr><td>the</td><td>THE</td><tr>
+    <tr><th>被替换词</th><th>替换为</th></tr>
+    <tr><td>cat</td><td>bear</td></tr>
+    <tr><td>mat</td><td>chair</td></tr>
+    <tr><td>dog</td><td>dragon</td></tr>
+    <tr><td>the</td><td>THE</td></tr>
   </table>
 </div>
 
@@ -142,12 +142,12 @@ in
 
 <div class="table-container">
   <table>
-    <tr><th>被替换词</th><th>替换为</th><tr>
-    <tr><td>cat</td><td>bear</td><tr>
-    <tr><td>mat</td><td>chair</td><tr>
-    <tr><td>dog</td><td>dragon</td><tr>
-    <tr><td>the</td><td>THE</td><tr>
-    <tr><td>air</td><td>water</td><tr>
+    <tr><th>被替换词</th><th>替换为</th></tr>
+    <tr><td>cat</td><td>bear</td></tr>
+    <tr><td>mat</td><td>chair</td></tr>
+    <tr><td>dog</td><td>dragon</td></tr>
+    <tr><td>the</td><td>THE</td></tr>
+    <tr><td>air</td><td>water</td></tr>
   </table>
 </div>
 

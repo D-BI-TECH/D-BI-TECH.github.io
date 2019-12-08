@@ -22,7 +22,7 @@ DAX中有多种求均值的方法。一些最流行的方法是平均值（[AVER
 
 来自[Greg Baldini的解决方案](https://social.msdn.microsoft.com/Forums/en-US/95ace0a4-1fe7-421f-a345-69319864141f/calculate-trimmed-mean-in-dax-mean)需要您预先知道要排除的值，但如果您希望公式能够处理包含重复值的数据，则可能会出现问题。 另一名微软MVP--Imke Feldmann，[她的解决方案](https://social.msdn.microsoft.com/Forums/vstudio/en-US/e193338e-dbbe-462b-99d6-1bd26a033227/how-can-i-calculate-the-trimmean-formula-in-powerpivot-excel-2010-)在多数场景下都没有问题，但无法处理位于边界的重复值。这是因为在DAX中，没有用户可以访问的行号的概念，所以这个问题需要不同的方法。
 
-*（译注：实现TRIMMEAN的另一种方法是使用TOPN嵌套TOPN，但正如作者所说，这依然无法处理位于边界的重复值，这在具有重复值的数据集中影响了计算精度）*
+<small>*（译注：实现TRIMMEAN的另一种方法是使用TOPN嵌套TOPN，但正如作者所说，这依然无法处理位于边界的重复值，这在具有重复值的数据集中影响了计算精度）*</small>
 
 #### 我的方法
 

@@ -36,11 +36,11 @@ author-image: Daniil.jpg
 let
     Source = #table(
         type table [Text = text],
-        {
+        { 
             {"the cat sat on the mat"},
             {"the cat sat next to the dog"},
             {"the dog chased the cat"},
-            {"the dog sat on the mat"}
+            {"the dog sat on the mat"} 
         }
     )
 in
@@ -66,11 +66,11 @@ let
             Word to Replace = text,
             Replace With = text
         ],
-        {
+        { 
             {"cat", "bear"},
             {"mat", "chair"},
             {"dog", "dragon"},
-            {"the", "THE"}
+            {"the", "THE"} 
         }
     )
 in
@@ -89,7 +89,7 @@ Text.ReplaceAll 接受两个参数:
 例如以下表达式返回 “yyz”:
 
 >```Python
-Text.ReplaceAll("xyz", {{"x", "y"}})
+Text.ReplaceAll("xyz", { {"x", "y"} })
 >```
 
 #### 使用 Text.ReplaceAll
@@ -109,17 +109,17 @@ let
             Word to Replace = text,
             Replace With = text
         ],
-        {
+        { 
             {"cat", "bear"},
             {"mat", "chair"},
             {"dog", "dragon"},
-            {"the", "THE"}
+            {"the", "THE"} 
         }
     ),
     ToList = List.Zip(
-        {
+        { 
             Source[Word to Replace],
-            Source[Replace With]
+            Source[Replace With] 
         }
     )
 in

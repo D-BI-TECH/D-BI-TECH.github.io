@@ -8,7 +8,7 @@ author-name: Daniil Maslyuk
 author-image: Daniil.jpg
 ---
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209004211453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text__d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209004211453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 最近我把很多M查询从.pbix文件迁移到了Dataflows，本博文中，我将分享一些在此过程中的心得。
 
@@ -39,7 +39,7 @@ Power Query确实区分了文本列中的空值和空字符串。这是它们在
 
 我个人认为空值比空字符串更可取。如果您和我一样，则在从数据流加载数据时，需要将空字符串替换为空值：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209004317658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text__d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209004317658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 #### 压缩
 

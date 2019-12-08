@@ -58,6 +58,6 @@ author-image: Daniil.jpg
 你已经可以通过连接到发布到Power BI service的数据集来尝试此新函数了！
 
 ----------------------
-由Davis ZHANG代译，[点此](https://xxlbi.com/blog/dax-functions-convert-removefilters/)查看英文原文
+由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/dax-functions-convert-removefilters/)查看英文原文
 
 ----------------------

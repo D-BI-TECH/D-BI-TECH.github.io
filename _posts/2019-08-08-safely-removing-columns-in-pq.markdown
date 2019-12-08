@@ -98,6 +98,6 @@ in
 不幸的是，[Table.TransformColumnTypes](https://docs.microsoft.com/en-us/powerquery-m/table-transformcolumntypes)函数没有对应的参数去处理丢失字段，尽管在某些场景下这将十分有用。如果你支持该想法，请[点此](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/31546837-include-missingfield-argument-with-table-transform)投票。
 
 ----------------------
-由Davis ZHANG代译，[点此](https://xxlbi.com/blog/safely-removing-columns-power-query/)查看英文原文
+由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/safely-removing-columns-power-query/)查看英文原文
 
 ----------------------

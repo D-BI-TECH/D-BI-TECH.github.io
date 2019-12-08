@@ -23,13 +23,13 @@ author-image: Daniil.jpg
 #### 文本查询
 
 <div class="table-container">
-  <table>
-    <tr><th>文本</th>
-    <tr><td>the cat sat on the mat</td>
-    <tr><td>the cat sat next to the dog</td>
-    <tr><td>the dog chased the cat</td>
-    <tr><td>the dog sat on the mat</td>
-  </table>
+    <table>
+        <tr><th>文本</th>
+        <tr><td>the cat sat on the mat</td>
+        <tr><td>the cat sat next to the dog</td>
+        <tr><td>the dog chased the cat</td>
+        <tr><td>the dog sat on the mat</td>
+    </table>
 </div>
 
 >```Python

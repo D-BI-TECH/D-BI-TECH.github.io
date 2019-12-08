@@ -14,7 +14,7 @@ author-image: Daniil.jpg
 
 在Power BI Desktop 2019年5月的更新文档，其中包括一个新的M函数：Text.ReplaceAll（截至2019年5月18日，未在微软文档中记录）。此函数简化了以前必须使用自定义函数完成的多个单词替换。
 
-#### Background
+#### 背景
 
 使用Power Query一次替换多个文本字符串是常见的情况。几位知名博主已经编写了自己的函数来替代现有功能——比如 Chris Webb, Ivan Bondarenko 和 Imke Feldmann（Imke Feldmann的公式稍有不同——稍后将详细介绍）。
 
@@ -22,11 +22,15 @@ author-image: Daniil.jpg
 
 #### 文本查询
 
->Text
->the cat sat on the mat
->the cat sat next to the dog
->the dog chased the cat
->the dog sat on the mat
+<div class="table-container">
+  <table>
+    <tr><th>文本</th>
+    <tr><td>the cat sat on the mat</td>
+    <tr><td>the cat sat next to the dog</td>
+    <tr><td>the dog chased the cat</td>
+    <tr><td>the dog sat on the mat</td>
+  </table>
+</div>
 
 >```Python
 let
@@ -43,7 +47,7 @@ in
     Source
 >```
 
-#### Replacements query
+#### 替换查询
 
 <div class="table-container">
   <table>

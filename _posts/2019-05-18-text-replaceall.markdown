@@ -162,6 +162,6 @@ in
 你可以下载我的.pbix文件：[TextReplaceAll.pbix](https://1drv.ms/u/s!Arstm99Oom00gdx_HrAm85o3brqjmw)
 
 ----------------------
-由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/text-replaceall/)查看英文原文
+由Davis ZHANG代译，[点此](https://xxlbi.com/blog/text-replaceall/)查看英文原文
 
 ----------------------

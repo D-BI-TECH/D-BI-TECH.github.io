@@ -3,7 +3,9 @@ layout: post
 title:  利用Microsoft Flow增强PBI使用效率
 date:   2019-06-11 06:03:50 +0000
 image:  03.jpg
-tags:   [Power BI,Microsoft Flow,Office 365]
+tags:   [Power BI,Power Automate,Office 365]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 <small>*前述：Microsoft Flow和Power BI都属于微软Power平台的一部分。在微软Power平台的[官网](https://powerplatform.microsoft.com/en-us/)，你可以看到关于该平台的以下介绍：*<small>

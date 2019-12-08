@@ -4,6 +4,8 @@ title:  DAX实现K近邻(KNN)分类算法
 date:   2019-05-18 06:03:50 +0000
 image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 <small>*前述：能不能够仅仅依靠Power BI自身来实现一些较简单的机器学习算法呢，而不用事事都依赖于R和Python，因此，我使用DAX做了一些尝试。过去，我实现了用DAX完成了多元线性回归，但那属于回归算法。对于分类算法，至少在K近邻算法方面，Google和百度上找不到有人做过这样的尝试，这也许因为极少有人会认为机器学习算法在DAX上能行得通，但下文的实践可以证明，这是行得通的。*<small>

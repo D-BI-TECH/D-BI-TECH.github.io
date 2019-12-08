@@ -4,6 +4,8 @@ title:  Power BI之SVG自定义可视化
 date:   2019-04-14 06:03:50 +0000
 image:  10.jpg
 tags:   [Power BI,可视化]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 一、简述

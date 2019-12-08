@@ -4,6 +4,8 @@ title:  PBI Report Server建立报表警报机制
 date:   2019-12-02 06:03:50 +0000
 image:  11.jpg
 tags:   [PBI Report Server,SQL Server]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 在Power BI Services, 只要你拥有Pro License，或者数据仪表板位于Premium空间，你就可以为特定的数据磁贴设置警报，当磁贴中的数据满足你所设定的条件时，Power BI Services就会向你推送通知，更进一步地，你还可以使用Microsoft Flow (现已改名为Power Automate) 将通知发送到你或你的同事的邮箱中，关于此，你可以参考[此文]({{site.baseurl}}/microsoft-flow-for-pbi/)进行设置。但对于那些没有购买License，使用Power BI报表服务器的用户而言，如何实现这个功能？

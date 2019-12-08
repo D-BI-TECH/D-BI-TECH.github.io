@@ -4,6 +4,8 @@ title:  两种方法计算每月开发的新客户数量
 date:   2019-03-24 20:03:50 +0000
 image:  06.jpg
 tags:   [Power BI,Power Pivot,DAX]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 ## 简述

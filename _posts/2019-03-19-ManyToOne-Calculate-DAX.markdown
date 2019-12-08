@@ -4,6 +4,8 @@ title:  在多对一关系中正确计算数据
 date:   2019-03-19 10:03:50 +0300
 image:  01.jpg
 tags:   [Power BI,Power Pivot,DAX]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 
@@ -12,7 +14,8 @@ tags:   [Power BI,Power Pivot,DAX]
 ## 案例概览
 在实际业务中，销量数据和库存数据放在同个表已经很常见，本案例的需求是使销售和库存在powerbi的同一个表格控件中展示，库存可以根据需求切换成“店铺库存”模式或“仓库库存”模式，在实际的应用场景中，表格的关系一旦复杂，对库存数据的计算就可能会出错，本文大幅简化了表格模型，找出其中的问题并给出解决方案。
 本例数据表格关系如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019031911075910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191208144725995.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+
 
 ## 数据介绍  
 Sales作为销售数据表，WH_stock是仓库库存，SR_stock是各个店铺库存，Shop则是店铺信息。字段方面，[No]是单号，[ItemNo.]是产品号，[ShopName]是店铺名称。

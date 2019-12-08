@@ -4,6 +4,8 @@ title:  DAX波士顿矩阵可视化实现
 date:   2019-04-19 06:03:50 +0000
 image:  11.jpg
 tags:   [Power BI,DAX,可视化]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 <small>*关于本文内容，本是此前有人提出过类似问题，后来自己想到了一种解决办法，觉得可以拿出来分享一下，因此就写了这篇短文。希望能够帮到有需要的人。*<small>

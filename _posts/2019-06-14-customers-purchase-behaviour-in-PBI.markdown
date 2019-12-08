@@ -3,7 +3,9 @@ layout: post
 title:  Power BI分析客户购买行为洞察产品潜力
 date:   2019-06-14 06:03:50 +0000
 image:  05.jpg
-tags:   [Power BI,Power Pivot,DAX,数据分析]
+tags:   [Power BI,Power Pivot,DAX]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 <small>【前述一】本文旨在利用DAX在Power BI实现客户购买行为的分析，并据此以洞察产品潜力。(注：本文逻辑可能有点复杂，但推荐大家研究，必有收获) <small>

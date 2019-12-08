@@ -4,6 +4,8 @@ title:  PBI Report Server报表页面自动刷新
 date:   2019-11-26 06:03:50 +0000
 image:  10.jpg
 tags:   [PBI Report Server,SSRS]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 在Power BI，一个很尴尬的情况是，无论是在Power BI Services 还是PBI Report Server，就算你为你的报表设置了高频率的数据刷新计划甚至是使用DirectQuery，报表页面都无法即时显示最新的数据，因为报表页面所展示的是你在打开报表页面前的最新数据的缓存结果，而后续的数据更新，只有当你手动刷新页面或重新打开报表才会返回最新的结果。首先，作为一名BI，“手动”这个词是很不讨人喜欢的，更重要的是，在生产环境中，管理者需要报表能够显示在大屏幕上，无需人为干预就能自动展示最新的数据（比如流水线各个环节的即时情况，机器状态等等）。关于此，一个好消息是在Power BI Desktop 10月的更新文档中，引入了页面刷新的预览功能，只要报表数据源是DirectQuery模式，就可以实现报表页面的自动刷新：

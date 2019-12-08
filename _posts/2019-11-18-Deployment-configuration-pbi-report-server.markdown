@@ -4,6 +4,8 @@ title:  PBI Report Server部署与配置详解
 date:   2019-11-18 06:03:50 +0000
 image:  09.jpg
 tags:   [PBI Report Server,SSRS]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 *【前述】关于Power BI 报表服务器的安装与配置，国内外的教程有很多，但较为全面的介绍却少之又少。通常来讲，你可能只需要完成安装并做简单配置就能正常使用报表服务器，那么你只需要参考[此Microsoft文档](https://docs.microsoft.com/en-us/power-bi/report-server/install-report-server)就已经足够了， 但如果你想详细了解服务器配置的各个方面，本文将会是一个很好的补充。*

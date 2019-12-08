@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Power BI 复合饼图
+title:  Power BI 复合饼图介绍
 date:   2019-06-30 06:03:50 +0000
 image:  06.jpg
 tags:   [Power BI,可视化]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 近期自己尝试开发了一个自定义可视化 - 复合饼图。这款原本在Excel的可视化终于可以搬到Power BI使用了：

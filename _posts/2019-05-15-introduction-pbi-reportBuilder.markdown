@@ -4,6 +4,8 @@ title:  PBI Report Builder 简介
 date:   2019-05-15 06:03:50 +0000
 image:  12.jpg
 tags:   [Power BI,SSRS]
+author-name: Davis ZHANG
+author-image: Davis.jpg
 ---
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190515153758883.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)

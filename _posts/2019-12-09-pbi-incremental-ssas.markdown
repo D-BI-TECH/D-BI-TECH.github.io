@@ -12,7 +12,7 @@ author-image: Davis.jpg
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209191718854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
-本文将使用SSDT (Visual Studio 2017)作为演示, 如果你还没有安装可以点此到达下载页面。对于使用Visual Studio 2019的用户同样适用，如果你的SQL Server版本较低且使用SSDT(Visual Studio 2012), 本文结尾处亦提供了相应的代码。
+本文将使用SSDT (Visual Studio 2017)作为演示, 如果你还没有安装可以[点此](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017#ssdt-for-vs-2017-standalone-installer)到达下载页面。对于使用Visual Studio 2019的用户同样适用，如果你的SQL Server版本较低且使用SSDT(Visual Studio 2012), 本文结尾处亦提供了相应的代码。
 
 ## 案例介绍：
 
@@ -20,9 +20,9 @@ author-image: Davis.jpg
 
 ## 方案演示：
 
-首先打开SSDT2017新建表格模型项目，刚开始你需要先连接到表格模型实例。注意，理论上同一个SQL Server实例的多维数据集实例与表格模型实例不能并存，如果你的SSAS是多维数据集，你可以查看此文章以了解如何将多维数据集实例转换为表格模型实例。（这样做的原因是Power BI连接表格模型在性能上要好得多）
+首先打开SSDT2017新建表格模型项目，刚开始你需要先连接到表格模型实例。注意，理论上同一个SQL Server实例的多维数据集实例与表格模型实例不能并存，如果你的SSAS是多维数据集，你可以查看[此文章](https://www.sqlservercentral.com/articles/how-to-change-an-analysis-services-instance-to-tabular-mode)以了解如何将多维数据集实例转换为表格模型实例。（这样做的原因是Power BI连接表格模型在性能上要好得多）
 
-另一个要注意的一点是，如下图所示，就是该表格模型项目的兼容级别。就我个人情况而言(也许对于多数用户也如此），1200是最好的选择。
+另一个要注意的一点是，如下图所示，就是该表格模型项目的[兼容级别](https://docs.microsoft.com/zh-cn/analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services?redirectedfrom=MSDN&view=sql-server-ver15)。就我个人情况而言(也许对于多数用户也如此），1200是最好的选择。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209191738774.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
@@ -36,7 +36,7 @@ author-image: Davis.jpg
 
 然而，要实现真正动态的增量刷新，这种方式显然行不通。当新的一天到来时，你不可能还回到SSDT，手动删除最早的分区，手动创建最新的分区，再手动执行插入最新一天的数据。在BI的世界，手动这个词是令人反感的，我们必须找到方法让这一切都自动化。
 
-幸运的是，我们可以在SSMS里将这一切操作以脚本方式运行。但首先我们需要发布我们的表格模型项目，这样我们才能在SSMS连接到表格模型实例后看到它：
+幸运的是，我们可以在[SSMS](https://docs.microsoft.com/zh-cn/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver15)里将这一切操作以脚本方式运行。但首先我们需要发布我们的表格模型项目，这样我们才能在SSMS连接到表格模型实例后看到它：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209191804483.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 

@@ -34,8 +34,8 @@ gitalk:
     enable: true
     owner: DavisZHANG-BlogOnly
     repo: ForBlogOnly
-    clientID: 0cafbeac3e41c55928b0
-    clientSecret: f1e390e070e04539e1c6254ff4647ad95d9068d3
+    clientID: 81594f9ebba24848f9be
+    clientSecret: 4c1babae593e874b16d25a3cded87646d71db3d4
     admin: DavisZHANG-BlogOnly
     distractionFreeMode: true
 

@@ -44,7 +44,7 @@ author-image: Davis.jpg
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209191814345.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
-在设计脚本之前，还需要完成最后一个步骤：在数据库实例中创建链接数据库。这是因为脚本需要使用SQL执行（而非MDX或DAX），这样才可以调用SSAS脚本执行数据库操作，因此需要一个连接到表格模型数据库的数据库实例提供一个可以操控SSAS数据库的接口。
+在设计脚本之前，还需要完成最后一个步骤：在数据库实例中创建链接数据库。这是因为脚本需要使用SQL执行（而非[MDX](https://docs.microsoft.com/zh-cn/analysis-services/multidimensional-models/mdx/multidimensional-model-data-access-analysis-services-multidimensional-data?view=sql-server-ver15#bkmk_querylang)或DAX），这样才可以调用SSAS脚本执行数据库操作，因此需要一个连接到表格模型数据库的数据库实例提供一个可以操控SSAS数据库的接口。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209191820742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
@@ -132,7 +132,7 @@ SELECT @earliest_partition_name='QUERY_'+FORMAT (dateadd(day,-90,getdate()), 'yy
 
 #### 【附】使用旧版本SSAS的解决方案：
 
-较旧版本的SSAS的脚本使用XML而非JSON，在此亦提供如下：
+较旧版本的SSAS(兼容级别在1103及以下)的脚本使用XML而非JSON，在此亦提供如下：
 
 >```SQL
 >Set @XMLA_SCRIPT =N'<Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">

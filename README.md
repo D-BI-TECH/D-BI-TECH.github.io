@@ -17,3 +17,5 @@ Changes
 10. Add Baidu Statistics
 11. Change font
 12. Add popup
+13. Remove Instagram
+14. Add Share to Sina&Qzone

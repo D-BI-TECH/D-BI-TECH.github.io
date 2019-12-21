@@ -14,6 +14,6 @@ Changes
 7. Change ALL pages layouts
 8. Add Gitalk
 9. Remove Google Analytics
-10. Add Baidu Statitic
+10. Add Baidu Statistics
 11. Change font
 12. Add popup

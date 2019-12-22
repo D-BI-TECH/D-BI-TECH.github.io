@@ -54,7 +54,7 @@ values(
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191222124244888.png)
 
-然后用SQL编写触发脚本，没学过SQL的读者也没关系，你可以直接使用以下代码，我在编写该脚本时做了精简和优化，你只需要在下面 [REPORT_NAME] 处换上你的PBI报表名称即可使用：
+然后用SQL编写触发脚本，没学过SQL的读者也没关系，你可以直接使用以下代码，我在编写该脚本时做了精简和优化，你只需要换成你的数据源表，在下面"REPORT_NAME"处换上你的PBI报表名称即可使用：
 
 *备注：如果你的报表服务器数据库名称不同，换上你的数据库名称即可*
 
@@ -70,7 +70,7 @@ IF OBJECT_ID
 ) is not null
 DROP TRIGGER trigger_data_refresh;GO
 CREATE TRIGGER trigger_data_refresh 
-ON [TriggerRefreshTest]
+ON [TriggerRefreshTest]  --此处替换为你的数据源表
 AFTER INSERT
 AS 
 SET NOCOUNT ON;DECLARE @REPORT_NAME NVARCHAR

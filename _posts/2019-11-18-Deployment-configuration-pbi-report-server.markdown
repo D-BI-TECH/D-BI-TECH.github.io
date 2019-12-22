@@ -26,38 +26,49 @@ Power BI Report Server有单点部署和拓展部署之分，拓展部署指多�
 二. 配置服务账户与执行账户
 -----
 
-配置服务账户。服务账户已经在报表服务器安装向导过程中预置，你可以在Configuration Manager中根据你的实际情况修改。服务账户主要分以下几种，并作对应说明：
+#### 配置服务账户
+
+服务账户已经在报表服务器安装向导过程中预置，你可以在Configuration Manager中根据你的实际情况修改。服务账户主要分以下几种，并作对应说明：
 
 >- 内置-虚拟服务账户  
-  <small>虚拟服务账户是具有域网络登录权限的内置最低权限账户。虚拟服务账户之所以称之为“虚拟”，是因为它是一个伪账户，你不能用它来登陆，也不存在密码，但它有足够的权限且可以在后台执行所有必要的操作，当然任何强制密码过期策略对该账户都是无效的，因此它可以规避因此导致的服务中断。我推荐你在测试时使用该服务账户。你可以在【任务管理器-服务-打开服务】中看到它，正式名称为：NT SERVICE\ <SERVICENAME><small>
+  <small>虚拟服务账户是具有域网络登录权限的内置最低权限账户。虚拟服务账户之所以称之为“虚拟”，是因为它是一个伪账户，你不能用它来登陆，也不存在密码，但它有足够的权限且可以在后台执行所有必要的操作，当然任何强制密码过期策略对该账户都是无效的，因此它可以规避因此导致的服务中断。我推荐你在测试时使用该服务账户。你可以在【任务管理器-服务-打开服务】中看到它，正式名称为：NT SERVICE\ <-SERVICENAME-><small>
 
 >- 内置-网络服务  
- <small>同样是一种伪账户，但相比虚拟服务账户权限更多，可访问网络资源，而不仅仅是域网络。不过正由于此，该账户具有一定的安全隐患，所以微软的文档建议我们尽量减少在同一账户下运行的其他服务的数量，因为任何一个应用程序的安全漏洞都会损害在同一账户下运行的所有其他应用程序的安全。你可以在【任务管理器-服务-打开服务】中看到它，正式名称为：NT AUTHORITY\ <SERVICENAME><small>
+ <small>同样是一种伪账户，但相比虚拟服务账户权限更多，可访问网络资源，而不仅仅是域网络。不过正由于此，该账户具有一定的安全隐患，所以微软的文档建议我们尽量减少在同一账户下运行的其他服务的数量，因为任何一个应用程序的安全漏洞都会损害在同一账户下运行的所有其他应用程序的安全。你可以在【任务管理器-服务-打开服务】中看到它，正式名称为：NT AUTHORITY\ <-SERVICENAME-><small>
 
 >- 域账户  
-  <small>从安全角度考虑，域用户账户是最受推荐的（使用域用户账户会将报表服务器与其他程序隔离开）。当然前提是你在域环境中，并且你的域windows账户具有必要的权限。如果你决定使用该类别的服务账户，那么最好在“本地用户和组”处勾选“密码永不过期”。名称为：<Domain Name>\<User Name><small>
+  <small>从安全角度考虑，域用户账户是最受推荐的（使用域用户账户会将报表服务器与其他程序隔离开）。当然前提是你在域环境中，并且你的域windows账户具有必要的权限。如果你决定使用该类别的服务账户，那么最好在“本地用户和组”处勾选“密码永不过期”。名称为：<-Domain Name->\<-User Name-><small>
 
 *备注：修改服务账户通常不会影响报表服务器运行，因为旧账户不会被自动移除。应用修改后报表服务器会自动重启*
 
-配置执行账户。服务账户是用于报表服务器运行的账户，而执行账户则完全不同，它是用于获取外部数据源的账户。比如你需要从远程计算机获取产品图片，且数据不能通过匿名访问获取，那么至少要求该账户在该计算机具有只读权限。每当报表中引用了远程服务器的数据，报表服务器就会在该报表（分页报表或PBI报表）每次刷新数据时，调用该执行账户访问远程服务器。出于安全性考虑，执行账户不要和服务账户相同，并且需要使用域账户(或工作组账户)。你还可以使用rsconfig Utility配置执行账户。
+#### 配置执行账户
+
+服务账户是用于报表服务器运行的账户，而执行账户则完全不同，它是用于获取外部数据源的账户。比如你需要从远程计算机获取产品图片，且数据不能通过匿名访问获取，那么至少要求该账户在该计算机具有只读权限。每当报表中引用了远程服务器的数据，报表服务器就会在该报表（分页报表或PBI报表）每次刷新数据时，调用该执行账户访问远程服务器。出于安全性考虑，执行账户不要和服务账户相同，并且需要使用域账户(或工作组账户)。你还可以使用rsconfig Utility配置执行账户。
 
 *备注：如果你的计算机使用Microsoft账户登录，需要切换到本地帐户模式*
 
 三. Web服务URL与Web门户URL
 -----
 
-配置Web服务URL。配置Web服务URL以使得我们可以在本地网络通过URL访问报表服务器实例，你需要指定虚拟目录名称（最好用英文）, IP地址，TCP端口。IP地址通常使用默认设置即可，TCP端口需要指定一个未被占用的端口，否则会造成报表服务器无法访问。
+#### 配置Web服务URL
+
+配置Web服务URL以使得我们可以在本地网络通过URL访问报表服务器实例，你需要指定虚拟目录名称（最好用英文）, IP地址，TCP端口。IP地址通常使用默认设置即可，TCP端口需要指定一个未被占用的端口，否则会造成报表服务器无法访问。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201180052673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
-关于HTTPS端口。HTTPS证书及端口是可选项，如果你希望使用SSL在报表服务器和Web服务之间使用加密的数据传输方式，那么你需要安装一个SSL证书，并指定HTTPS端口（默认为443），然后将证书绑定到URL。
+#### 关于HTTPS端口
+
+HTTPS证书及端口是可选项，如果你希望使用SSL在报表服务器和Web服务之间使用加密的数据传输方式，那么你需要安装一个SSL证书，并指定HTTPS端口（默认为443），然后将证书绑定到URL。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201180102954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 *备注：关于安装SSL证书可参考[此文](https://blog.csdn.net/qq_44794714/article/details/103077575)或[此Microsoft文档](https://docs.microsoft.com/en-us/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-ver15)*
 
-配置Web门户URL。Web门户URL即PBI Report Server站点URL，用户通过此地址访问报表服务器站点，上传，下载或查看报表。每当你修改了Web服务URL，一定要到重新应用Web门户URL，否则可能会出现"Web服务URL与Web门户URL不一致"的错误。此外，你可以通过指定不同的主机名和端口指定多个Web门户URL和Web服务URL，比如当你希望内部人员和外部人员访问报表服务器门户时使用不同的安全验证方法，就可以利用此特性，但对于同一实例，虚拟目录只能有一个。
-备注：PBI Report Server Web门户URL可以传参（尽管可用的功能暂时不如SSRS及Power BI Services丰富）。比如报表URL+?rs:embed=true可以让报表全屏显示（分页报表及PBI报表），也可以设定filter参数预先切片（仅支持PBI报表），详见[Microsoft文档](https://docs.microsoft.com/en-us/power-bi/service-url-filters)。
+#### 配置Web门户URL
+
+Web门户URL即PBI Report Server站点URL，用户通过此地址访问报表服务器站点，上传，下载或查看报表。每当你修改了Web服务URL，一定要到重新应用Web门户URL，否则可能会出现"Web服务URL与Web门户URL不一致"的错误。此外，你可以通过指定不同的主机名和端口指定多个Web门户URL和Web服务URL，比如当你希望内部人员和外部人员访问报表服务器门户时使用不同的安全验证方法，就可以利用此特性，但对于同一实例，虚拟目录只能有一个。
+
+*备注：PBI Report Server Web门户URL可以传参（尽管可用的功能暂时不如SSRS及Power BI Services丰富）。比如报表URL+?rs:embed=true可以让报表全屏显示（分页报表及PBI报表），也可以设定filter参数预先切片（仅支持PBI报表），详见[Microsoft文档](https://docs.microsoft.com/en-us/power-bi/service-url-filters)*
 
 四. 配置数据库
 ------
@@ -96,7 +107,9 @@ Power BI Report Server有单点部署和拓展部署之分，拓展部署指多�
 五. 电子邮件服务
 -----
 
-配置电子邮件--准备工作。在PBI Report Server中，可以创建报表订阅，使特定报表（暂支持分页报表）可以按期以你所设定的文件格式发送到指定一个或多个用户的邮箱。在未配置电子邮件前，报表服务器的订阅方式中"电子邮件"是不可见的，配置好电子邮件地址和SMTP服务器后，重启Report Server即可在订阅页面看到"电子邮件"的订阅方式：
+#### 配置电子邮件--准备工作
+
+在PBI Report Server中，可以创建报表订阅，使特定报表（暂支持分页报表）可以按期以你所设定的文件格式发送到指定一个或多个用户的邮箱。在未配置电子邮件前，报表服务器的订阅方式中"电子邮件"是不可见的，配置好电子邮件地址和SMTP服务器后，重启Report Server即可在订阅页面看到"电子邮件"的订阅方式：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201180142787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
@@ -104,7 +117,9 @@ Power BI Report Server有单点部署和拓展部署之分，拓展部署指多�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201180157788.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
-配置电子邮件--填写基本信息。在Configuration Manager的"电子邮件设置"处填写发件人地址，SMTP服务器等信息（其中SMTP服务器可以使用远程服务器或本地服务器，此处以使用远程SMTP服务器为例）。根据我的测试，不是所有的SMTP服务器都能连接或验证成功，以下列出我的测试结果供大家参考：
+#### 配置电子邮件--填写基本信息
+
+在Configuration Manager的"电子邮件设置"处填写发件人地址，SMTP服务器等信息（其中SMTP服务器可以使用远程服务器或本地服务器，此处以使用远程SMTP服务器为例）。根据我的测试，不是所有的SMTP服务器都能连接或验证成功，以下列出我的测试结果供大家参考：
 
 <div class="table-container">
   <table>
@@ -120,7 +135,9 @@ Power BI Report Server有单点部署和拓展部署之分，拓展部署指多�
 
 *备注：如果你指定的SMTP支持匿名连接，你可以选择"无身份验证"，或者你选择使用本地SMTP服务器时，可以选择NTLM身份验证*
 
-配置电子邮件--使用配置文件配置。你也可以打开rsreportserver.config文件填写并修改部分配置 （文件位置: <你的PBI Report Server 根目录>/PBIRS/ReportServer）。其中，在<SMTPServerPort>处填写端口号"25",<SMTPUseSSL>处一般填写False，在<DefaultHostName>填写SMTP服务器的IP地址（但这不是必须的）。
+#### 配置电子邮件--使用配置文件配置
+
+你也可以打开rsreportserver.config文件填写并修改部分配置 （文件位置: <你的PBI Report Server 根目录>/PBIRS/ReportServer）。其中，在<SMTPServerPort>处填写端口号"25",<SMTPUseSSL>处一般填写False，在<DefaultHostName>填写SMTP服务器的IP地址（但这不是必须的）。
 在完成以上步骤后，回到PBI Report Server门户网站，创建一个订阅并设定计划，如果仅用于测试则可以跳过此步（设定计划同样适用于文件共享服务）：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201180226101.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)

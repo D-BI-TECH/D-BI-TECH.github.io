@@ -36,12 +36,29 @@
                         </a>
                     
                 {% endif %}
+	            {% if site.wordpress %}
+                    
+                        <a target="_blank" href="{{ site.wordpress }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    
+               {% endif %}
 	        </div>
         </div>
         <div class="footer-bottom">
             <div class="copyright">
               <p>&copy; {{site.time | date: '%Y'}} Published with<a href="https://pages.github.com/"> GitHub Pages </a>
 			| All Rights Reserved </p>
+            </div>
+            <div class="footer-social" style="color:#707890">
+                <ul class="list-reset">
+                  <li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                      <small>&ensp;友情链接：&ensp;&ensp;</small><a href="https://www.powerbigeek.com/">PowerBI Geek</a>
+                </ul>
             </div>  
         </div>
       </div>

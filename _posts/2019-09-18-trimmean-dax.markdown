@@ -8,6 +8,10 @@ author-name: Daniil Maslyuk
 author-image: Daniil.jpg
 ---
 
+<small>[原文](https://xxlbi.com/blog/trimmean-dax/)译注：Davis ZHANG  </small>
+
+----------------------
+
 DAX中有多种求均值的方法。一些最流行的方法是平均值（[AVERAGE](https://dax.guide/average/)）、中值（[median](https://dax.guide/median/)）和 mode（没有内置函数；请参见[DAX Patterns](https://www.daxpatterns.com/statistical-patterns/#mode)的示例）。另一个是TRIMMEAN，它存在于Excel中。DAX中没有相应的函数，这篇文章展示了如何在DAX中实现该函数的功能。
 
 微软MVP和BI发烧友Miguel Escobar给我分享了他在[Spanish Power BI论坛](https://foro.poweredsolutions.co/topic/223-representar-la-media-de-los-valores-que-quedan-por-debajo-del-percentil-k/)上的一个帖子，在那里，señor OD_GarcíaDeLaCruz要求我就如何在DAX中从Excel模仿TRIMMEAN函数提出建议。
@@ -116,7 +120,4 @@ VAR Counts =
 
 在数据量较大的表中，性能可能不会太好。如果你有性能更优的方法，告诉我吧！
 
-----------------------
-由Davis ZHANG翻译（及注解），[点此](https://xxlbi.com/blog/trimmean-dax/)查看英文原文
 
-----------------------

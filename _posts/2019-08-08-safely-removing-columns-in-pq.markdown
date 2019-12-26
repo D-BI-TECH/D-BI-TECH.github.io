@@ -2,11 +2,15 @@
 layout: post
 title:  在PowerQuery安全地移除字段
 date:   2019-08-08 06:03:50 +0000
-image:  11.jpg
+image:  08.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg
 ---
+
+<small>[原文](https://xxlbi.com/blog/safely-removing-columns-power-query/)译注：Davis ZHANG  </small>
+
+----------------------
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191207164907155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
@@ -97,7 +101,3 @@ in
 
 不幸的是，[Table.TransformColumnTypes](https://docs.microsoft.com/en-us/powerquery-m/table-transformcolumntypes)函数没有对应的参数去处理丢失字段，尽管在某些场景下这将十分有用。如果你支持该想法，请[点此](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/31546837-include-missingfield-argument-with-table-transform)投票。
 
-----------------------
-由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/safely-removing-columns-power-query/)查看英文原文
-
-----------------------

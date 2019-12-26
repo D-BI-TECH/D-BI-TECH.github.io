@@ -2,7 +2,7 @@
 layout: post
 title:  PBI Report Server触发式数据刷新
 date:   2019-12-22 00:03:50 +0000
-image:  06.jpg
+image:  07.jpg
 tags:   [Report Server,SQL Server,Power BI]
 author-name: Davis ZHANG
 author-image: Davis.jpg

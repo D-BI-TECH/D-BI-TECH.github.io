@@ -8,6 +8,10 @@ author-name: Daniil Maslyuk
 author-image: Daniil.jpg
 ---
 
+<small>[原文](https://xxlbi.com/blog/power-bi-dataflows-considerations/)译注：Davis ZHANG  </small>
+
+----------------------
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191209004211453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 最近我把很多M查询从.pbix文件迁移到了Dataflows，本博文中，我将分享一些在此过程中的心得。
@@ -104,7 +108,3 @@ Power Query确实区分了文本列中的空值和空字符串。这是它们在
 
 我真的很喜欢数据流。我相信微软很快就会缩小Power BI Desktop中的Power Query编辑器和Power BI service之间的差距，如果你记住Dataflow数据是以csv形式存储的，并且有其细微差别，你可以避免很多问题。
 
-----------------------
-由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/power-bi-dataflows-considerations/)查看英文原文
-
-----------------------

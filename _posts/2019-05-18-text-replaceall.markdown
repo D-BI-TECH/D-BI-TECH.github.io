@@ -8,6 +8,10 @@ author-name: Daniil Maslyuk
 author-image: Daniil.jpg
 ---
 
+<small>[原文](https://xxlbi.com/blog/text-replaceall/)译注：Davis ZHANG  </small>
+
+----------------------
+
 ![Replacement dictionary for Text.ReplaceAll](https://img-blog.csdnimg.cn/20191208153340999.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 2019年6月4日更新: 不幸的是，该函数不会被发布。该函数是经过认证的连接器的一部分，现在已隐藏。
@@ -169,7 +173,4 @@ in
 
 *(译注：此文件已被我分享至[百度网盘](https://pan.baidu.com/s/13bNaER-U4c4-V2MfKiqqOQ)）*
 
-----------------------
-由Davis ZHANG翻译，[点此](https://xxlbi.com/blog/text-replaceall/)查看英文原文
 
-----------------------

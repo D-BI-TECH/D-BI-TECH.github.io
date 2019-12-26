@@ -372,7 +372,7 @@ EVALUATE
 
 查询4在"Operating System Name"上添加了一个过滤器，现在生成的值大约为100万马克。6月7日，我们第一次发现结果超过了2%。其他值都正常。
 
-![查询4的准确性结果](https://img-blog.csdnimg.cn/20191226213418932.png?x-oss-process=image/watermark,type_d3d3LmQtYmkudGVjaA==,shadow_10,text_a,size_16,color_FFFFFF,t_70)
+![查询4的准确性结果](https://img-blog.csdnimg.cn/20191226213418932.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 查询4为基准线版本和HLL版本生成了最短的耗时，其中HLL版本大约快了3倍。
 
@@ -386,7 +386,7 @@ EVALUATE
 
 在极端情况下，当基准线产生一个为1的值时，HLL代码可能产生约3.87亿的估计值。原因是我们在一个散列桶中只有一个值。我们使用了14位的精度，所以在这种情况下我们有16383个空桶。
 
-![按不同计数列升序排序的查询5的精度结果示例](https://img-blog.csdnimg.cn/20191226213432684.png?x-oss-process=image/watermark,type_d3d3LmQtYmkudGVjaA==,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![按不同计数列升序排序的查询5的精度结果示例](https://img-blog.csdnimg.cn/20191226213432684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 
 ![查询5的精度结果](https://img-blog.csdnimg.cn/20191226213433414.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)

@@ -251,6 +251,8 @@ Approx Distinct Users =
 
 可以点击[此处](https://1drv.ms/x/s!AtDlC2rep7a-yGLd-z73QAHREB6h?e=pZrNQW)下载包含详细结果的excel文件
 
+*（译注：此文件已分享至[百度网盘](https://pan.baidu.com/s/1PdGQ7OoOR3aooc0Ssj36-w)）*
+
 为了建立一个用于对比的基准线，我在没有HLL辅助列的模型上运行了三次查询（如下）。然后，对于HLL算法进行测试，使用DISTINCTCOUNT函数编写了五个DAX查询表达式，从上面调用"Approx Distinct Users"度量值，并在更新的模型上运行HLL。否则，基准线和测试结果之间的分组和筛选指令会相同。
 
 一旦查询被更新并指向增强的模型，每个查询将再次运行三次。

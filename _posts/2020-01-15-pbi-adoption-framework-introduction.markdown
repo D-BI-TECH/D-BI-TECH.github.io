@@ -19,9 +19,10 @@ Power BI Adoption Framework（简称AF）是近期引入的一个全新概念，
 ### 如何推进企业Power BI的采用与实施
 
 感谢来自印度的BI专家[Manu Kanwarpal](https://www.linkedin.com/in/manukanwarpal/)制作的幻灯片，下图十分简洁明了的介绍了Power BI AF的实施步骤：
-1.ENVISION 愿景
-2.ON-BOARD 达成一致
-3.DRIVE VALUE 价值驱动
+
+1.ENVISION 愿景  
+2.ON-BOARD 达成一致  
+3.DRIVE VALUE 价值驱动  
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114224922110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Power BI Adoption Framework 介绍
-date:   2020-01-15 06:03:50 +0000
+date:   2020-01-15 04:03:50 +0000
 image:  09.jpg
 tags:   [Power BI,数据文化]
 author-name: Davis ZHANG

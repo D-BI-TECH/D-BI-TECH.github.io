@@ -7,7 +7,6 @@
                 <a href="{{site.baseurl}}/" class="logo-text">D-BI.TECH</a>
                 
             </h2><a href="#" class="top"><i class="fa fa-angle-double-up pull-right"></i></a>
-            
 	        <div class="footer-social">
 		        {% if site.RSS %}
                     
@@ -27,28 +26,29 @@
                         </a>
                     
                 {% endif %}
-                {% if site.zhihu %}
+
+                {% if site.email-address %}
                     
-                        <a target="_blank" href="{{ site.zhihu }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    
-                {% endif %}
-	        </div>
+                <a href="mailto:{{ site.email-address }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa  fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            
+        {% endif %}
+            </div>
         </div>
         <div class="footer-bottom">
             <div class="copyright">
-              <p>&copy; {{site.time | date: '%Y'}} Published with<a href="https://pages.github.com/"> GitHub Pages </a>
+              <p>&copy; 2019-{{site.time | date: '%Y'}} Published with<a href="https://pages.github.com/"> GitHub Pages </a>
 			| All Rights Reserved </p>
             </div>
             <div class="footer-social" style="color:#707890">
                 <ul class="list-reset">
                   <li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                      <small>&ensp;友情链接：&ensp;&ensp;</small><a href="https://www.powerbigeek.com/">PowerBI Geek</a>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                      <small>&ensp;FRIENDS：&ensp;&ensp;</small><a href="https://www.d-bi.tech/">(互换链接位 预留1-3)</a>
                 </ul>
             </div>  
         </div>

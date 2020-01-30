@@ -6,7 +6,7 @@ permalink: /blog-union/
 
 <html>
 <body>
-<iframe width="892" height="585" src="https://app.powerbi.com/view?r=eyJrIjoiOTA4OWQ3NWEtYjhlZi00NDQ1LWI3MjQtMGJiNDZhNzA3MDk3IiwidCI6IjAwM2ViMjA5LTc0NjQtNGVhNy1hOTcxLWFlMWQyMmI5NGFiNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="100%" height="585" src="https://app.powerbi.com/view?r=eyJrIjoiOTA4OWQ3NWEtYjhlZi00NDQ1LWI3MjQtMGJiNDZhNzA3MDk3IiwidCI6IjAwM2ViMjA5LTc0NjQtNGVhNy1hOTcxLWFlMWQyMmI5NGFiNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 </html>
 

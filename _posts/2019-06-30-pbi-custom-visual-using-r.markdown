@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Power BI 复合饼图介绍
+title:  Power BI复合饼图介绍
 date:   2019-06-30 06:03:50 +0000
 image:  08.jpg
 tags:   [Power BI,可视化]

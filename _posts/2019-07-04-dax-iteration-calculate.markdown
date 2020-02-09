@@ -121,8 +121,9 @@ RETURN
 VARIABLE_DISTANCE
 >```
 
-注1：以如图1的C列为例，其公差为3，公比为2，则f(n) – f(n-1)为首项为f(2)-f(1),公比为2的等比数列
-注2：第14、15行处，由于差分法会使第一项留空，故使用IF(ISBLANK(),,)使第一行有值
+*注1：以如图1的C列为例，其公差为3，公比为2，则f(n) – f(n-1)为首项为f(2)-f(1),公比为2的等比数列*
+
+*注2：第14、15行处，由于差分法会使第一项留空，故使用IF(ISBLANK(),,)使第一行有值*
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191129192645754.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  DAX:Calculation Group 概念与应用
+title:  DAX：Calculation Group 概念与应用
 date:   2020-02-09 04:03:50 +0000
 image:  11.jpg
 tags:   [DAX,SSAS]

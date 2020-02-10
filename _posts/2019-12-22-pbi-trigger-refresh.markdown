@@ -8,7 +8,7 @@ author-name: Davis ZHANG
 author-image: Davis.jpg
 ---
 
-***注：了解包括PowerBI的最新资讯，或有相关技术问题，请关注知乎[微软BI技术资讯圈](https://www.zhihu.com/club/1189912932908257280?ab_signature=CiRBS0Fqc2xNRUNSQkxCZklPdmJXSGxBY1ZYWmN0WEQ2RURRaz0SIGE5MTkyMTI2ODM3MTJlZmY5ZjgxNTkxNGRhZjYzZjIxGhAIARIGNi4yNC4xGgQxNzky)。有资讯一起共享，有问题发帖讨论！***
+***注：了解包括PowerBI的最新资讯，或有相关技术问题，请关注知乎[微软BI圈](https://www.zhihu.com/club/1189912932908257280?ab_signature=CiRBS0Fqc2xNRUNSQkxCZklPdmJXSGxBY1ZYWmN0WEQ2RURRaz0SIGE5MTkyMTI2ODM3MTJlZmY5ZjgxNTkxNGRhZjYzZjIxGhAIARIGNi4yNC4xGgQxNzky)。有资讯一起共享，有问题发帖讨论！***
 
 最近有人问我，直接在报表服务器数据库进行操作是否会影响到PowerBI报表门户的设置，答案当然是肯定的，除了动态权限控制，[设置数据警报]({{site.baseurl}}/set-email-alert-pbi-reportserver/)以及监控报表用户等等，利用报表服务器数据库还能完成很多你在PowerBI Services难以做到的事情。本文的主题就是一个经典用例——利用Report Server数据库的存储过程，设置触发式的报表数据刷新。
 

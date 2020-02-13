@@ -155,7 +155,7 @@
   height: 40px;
   font-size: 40px;
   border-radius: 50%;
-  border: 2px solid $gray-blue;
+  border: 0px solid $gray-blue;
   color: $gray-blue;
   transition: all $global-transition;
   cursor: pointer;
@@ -506,7 +506,7 @@
     }
   }
   .nav-menu .menu-link,
-  .nav-buttons i.ion {
+  .nav-buttons i.fa {
     transition: color $global-transition;
     &:hover {
       color: #fff;

@@ -59,7 +59,7 @@ APPROXIMATEDDISTICNTCOUNT函数仅在通过Azure SQL数据库或Azure SQL数据�
 
 我在博客底部附上了我所找到的完整文章列表，但对我来说最有用的文章链接是：
 
-[http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/40671.pdf](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/40671.pdf)
+[research.google.com/en/us/pubs/archive/40671.pdf](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/40671.pdf)
 
 HLL的思想是，首先在唯一值计数计算中为每个项创建一个散列值。哈希值通常用于加密/解密。然而，对于HLL，散列项的主要目标是生成一个输出值，该输出值对于每个输入值具有相同的位数。
 
@@ -425,15 +425,15 @@ EVALUATE
 
 ## 引用文章
 
-- http://dblab.kaist.ac.kr/Publication/pdf/ACM90_TODS_v15n2.pdf
-- https://www.rose-hulman.edu/~holden/Preprints/jha-paper.pdf
-- https://www.dummies.com/programming/big-data/find-number-elements-data-stream/
-- https://engineering.fb.com/data-infrastructure/hyperloglog/
-- https://research.neustar.biz/2013/01/24/hyperloglog-googles-take-on-engineering-hll/
-- https://odino.org/my-favorite-data-structure-hyperloglog/
-- http://dblab.kaist.ac.kr/Prof/pdf/ACM90_TODS_v15n2.pdf
-- https://www.cs.princeton.edu/~rs/talks/AC11-Cardinality.pdf
-- http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf
-- https://www.cms.waikato.ac.nz/~abifet/book/chapter_4.html
-- https://docs.google.com/document/d/1gyjfMHy43U9OWBXxfaeG-3MjGzejW1dlpyMwEYAAWEI/view?fullscreen
-- https://en.wikipedia.org/wiki/HyperLogLog
+- [ACM90_TODS_v15n2.pdf](http://dblab.kaist.ac.kr/Publication/pdf/ACM90_TODS_v15n2.pdf)
+- [jha-paper.pdf](https://www.rose-hulman.edu/~holden/Preprints/jha-paper.pdf)
+- [find-number-elements-data-stream](https://www.dummies.com/programming/big-data/find-number-elements-data-stream/)
+- [hyperloglog](https://engineering.fb.com/data-infrastructure/hyperloglog/)
+- [hyperloglog-googles-take-on-engineering-hll](https://research.neustar.biz/2013/01/24/hyperloglog-googles-take-on-engineering-hll/)
+- [my-favorite-data-structure-hyperloglog](https://odino.org/my-favorite-data-structure-hyperloglog/)
+- [ACM90_TODS_v15n2.pdf](http://dblab.kaist.ac.kr/Prof/pdf/ACM90_TODS_v15n2.pdf)
+- [AC11-Cardinality.pdf](https://www.cs.princeton.edu/~rs/talks/AC11-Cardinality.pdf)
+- [FlFuGaMe07.pdf](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf)
+- [chapter_4.html](https://www.cms.waikato.ac.nz/~abifet/book/chapter_4.html)
+- [1gyjfMHy43U9OWBXxfaeG-3MjGzejW1dlpyMwEYAAWEI](https://docs.google.com/document/d/1gyjfMHy43U9OWBXxfaeG-3MjGzejW1dlpyMwEYAAWEI/view?fullscreen)
+- [wiki-HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog)

@@ -49,7 +49,7 @@ APPROXIMATEDDISTICNTCOUNT函数仅在通过Azure SQL数据库或Azure SQL数据�
 
 如果已经对其中一个数据源使用Direct Query，则此DAX函数可以工作。尽管如此，我还是想看看能否在数据模型中复制这个函数——所以在DAX中构建了一个DIY版本的APPROXIMATEDDISTINCTCOUNT函数。
 
-## DIY APPROXIMATEDDISTICNTCOUNT
+## DIY APPROXIMATED DISTICNTCOUNT
 
 我最初对该方案的研究中很快让我想到了[HyperLogLog（HLL）](https://en.wikipedia.org/wiki/HyperLogLog)算法，它看起来就是我所追求的。HLL背后的思想是在不消耗大量内存的情况下，快速生成大数据集上的基数估计。谷歌、Facebook和Twitter等公司使用HLL算法的变体，帮助他们更有效地计算、分析和理解海量数据集。
 
@@ -63,14 +63,18 @@ APPROXIMATEDDISTICNTCOUNT函数仅在通过Azure SQL数据库或Azure SQL数据�
 
 HLL的思想是，首先在唯一值计数计算中为每个项创建一个散列值。哈希值通常用于加密/解密。然而，对于HLL，散列项的主要目标是生成一个输出值，该输出值对于每个输入值具有相同的位数。
 
-|Text Value | Hash Value |
-|--|--|
-| DAX | 4172989e6bf5b674bd2a7a6dc770790b |
-| Approximate | b81a30c12698563b79179ec37d43629 |
-| DAX is Fun | de54835215117a88ba9e66967015f007 |
-| 1 | c4ca4238a0b923820dcc509a6f75849b |
-| 2 | c81e728d9d4c2f636f067f89cc14862c |
-| 3 | eccbc87e4b5ce2fe28308fd9f2a7baf3 |
+
+<div class="table-container" >
+  <table style="word-wrap:break-word;word-break:break-all;">
+    <tr><th style="word-break: normal">Text Value</th><th>Hash Value</th></tr>
+    <tr><td style="word-break: normal">DAX</td><td>4172989e6bf5b674bd2a7a6dc770790b</td></tr>
+    <tr><td style="word-break: normal">Approximate</td><td>b81a30c12698563b79179ec37d43629</td></tr>
+    <tr><td style="word-break: normal">DAX is Fun</td><td>de54835215117a88ba9e66967015f007</td></tr>
+    <tr><td style="word-break: normal">1</td><td>c4ca4238a0b923820dcc509a6f75849b</td></tr>
+    <tr><td style="word-break: normal">2</td><td>c81e728d9d4c2f636f067f89cc14862c</td></tr>
+    <tr><td style="word-break: normal">3</td><td>eccbc87e4b5ce2fe28308fd9f2a7baf3</td></tr>
+  </table>
+</div>
 
 
 如上表所示，每个文本值的哈希版本总是相同的长度。类似的值（如1、2和3）会产生完全不同的散列结果。其他算法可以用来代替MD5，如SHA1、SHA256或murdur3。对于用于HLL的散列算法，最重要的特性是算法总是为给定的输入生成相同的输出，并且对于所有的输入值，输出的长度总是相同的，而不管输入值的长度如何。

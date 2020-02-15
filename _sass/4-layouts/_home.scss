@@ -14,11 +14,14 @@
 .header-box {  
 
   @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:990px){
       width: 92%;
       }; 
-    @media screen and (min-width:1024px) and (max-width:1367px){
-      width: 82%;
+    @media screen and (min-width:990px) and (max-width:1030px){
+      width: 91%;
+      }; 
+    @media screen and (min-width:1030px) and (max-width:1367px){
+      width: 85%;
       }; 
     @media screen and (min-width:1367px){
       width: 61%;

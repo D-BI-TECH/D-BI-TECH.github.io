@@ -20,7 +20,7 @@ author-image: Davis.jpg
 
 ### 前提：  
 
-为了实现该功能，需要确保满足两个条件：你的报表服务器为分页报表创建邮件订阅的功能能够正常运行，这代表你在报表服务器Configuration Manager上的配置是正确的。如果你是一名纯粹的Power BI报表开发者，不了解[关于分页报表的基础知识]({{site.baseurl}}/introduction-pbi-reportBuilder/)，你需要打开Configuration Manager检查数据库和电子邮件设置并确保已经开启了SQL Server代理服务（或参考文本第五章关于邮件订阅的配置）。其次，你已经在SSMS中配置了数据库邮件（具体步骤参考[此文]({{site.baseurl}}/set-email-alert-pbi-reportserver/)）。
+为了实现该功能，需要确保满足两个条件：你的报表服务器为分页报表创建邮件订阅的功能能够正常运行，这代表你在报表服务器Configuration Manager上的配置是正确的。如果你是一名纯粹的Power BI报表开发者，不了解[关于分页报表的基础知识]({{site.baseurl}}/introduction-pbi-reportBuilder/)，你需要打开Configuration Manager检查数据库和电子邮件设置并确保已经开启了SQL Server代理服务。其次，你已经在SSMS中配置了数据库邮件（具体步骤参考[此文]({{site.baseurl}}/set-email-alert-pbi-reportserver/)）。
 
 ### 实现：
 

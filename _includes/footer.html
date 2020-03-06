@@ -4,15 +4,15 @@
   
 <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col col-12">
-          <div class="footer-top">
-              <h2 class="logo-title">
-                  <a href="{{site.baseurl}}/" class="logo-text">Davis on BI</a>
+        <div class="row">
+            <div class="col col-12">
+                <div class="footer-top">
+                  <h2 class="logo-title">
+                    <a href="{{site.baseurl}}/" class="logo-text">Davis on BI</a>
                   
-              </h2><a href="#" class="top"><i class="fa fa-angle-double-up pull-right"></i></a>
-              <div class="footer-social">
-                  {% if site.RSS %}
+                  </h2><a href="#" class="top"><i class="fa fa-angle-double-up pull-right"></i></a>
+                    <div class="footer-social">
+                     {% if site.RSS %}
                       
                           <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
                               <span class="fa-stack fa-lg">
@@ -20,8 +20,8 @@
                               </span>
                           </a>
                       
-                  {% endif %}
-                  {% if site.linkedin %}
+                    {% endif %}
+                    {% if site.linkedin %}
                       
                           <a target="_blank" href="{{ site.linkedin }}">
                               <span class="fa-stack fa-lg">
@@ -29,30 +29,46 @@
                               </span>
                           </a>
                       
-                  {% endif %}
+                    {% endif %}
   
-                  {% if site.email-address %}
+                    {% if site.email-address %}
                       
-                  <a href="mailto:{{ site.email-address }}">
+                    <a href="mailto:{{ site.email-address }}">
                       <span class="fa-stack fa-lg">
                           <i class="fa  fa-envelope fa-stack-1x fa-inverse"></i>
                       </span>
-                  </a>
+                    </a>
               
-          {% endif %}
-              </div>
-          </div>
-          <div class="footer-bottom">
-              <div class="copyright">
-                <p>&#10032; Friends：<a href="https://www.powerbigeek.com/">PowerBI极客</a>&ensp;&ensp;<a href="https://pbihub.cn/">PBI Hub</a><br />&copy; 2019-{{site.time | date: '%Y'}} Published with<a href="https://pages.github.com/"> GitHub Pages </a>| All Rights Reserved
-              </p>
-              </div>
-
-
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row" >
+            <div class="col col-9">
+                <div class="footer-bottom">
+                    <div class="copyright">
+                    <p>&#10032; Friends：<a href="https://www.powerbigeek.com/">PowerBI极客</a>&ensp;&ensp;<a href="https://pbihub.cn/">PBI Hub</a><br />&copy; 2019 Published with<a href="https://pages.github.com/"> GitHub Pages </a>
+                    <span>| All Rights Reserved</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 fadeshow">
+                <div class="row">
+                <div class="col col-6">
+                    <p></p>
+                </div>
+                <div class="col col-6">
+                    <span>
+                        <img src="{{site.baseurl}}/img/cert.png" style="margin-left:7px;" width="85%" >
+                    </span> 
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer> <!-- /.footer -->
+</footer> <!-- /.footer --> 
 
 
   

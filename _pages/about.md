@@ -62,6 +62,6 @@ permalink: /about/
 本人具有Microsoft BI部署经验，若有合作需求，欢迎由以下邮箱联系本人：  
 E-mail: daviszhang@189.cn  
 
-<img src="{{site.baseurl}}/img/cert.jpg" width="45%">
+<!--<img src="{{site.baseurl}}/img/cert.jpg" width="45%">-->
 
 

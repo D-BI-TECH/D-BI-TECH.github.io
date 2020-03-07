@@ -6,6 +6,7 @@ image:  11.jpg
 tags:   [Power BI,DAX,统计学]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 困难
 ---
 
 一、简述

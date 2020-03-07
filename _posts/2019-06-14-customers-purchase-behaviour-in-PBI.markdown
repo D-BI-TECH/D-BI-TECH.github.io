@@ -6,6 +6,7 @@ image:  07.jpg
 tags:   [Power BI,Power Pivot,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 困难
 ---
 
 <small>【前述一】本文旨在利用DAX在Power BI实现客户购买行为的分析，并据此以洞察产品潜力。(注：本文逻辑可能有点复杂，但推荐大家研究，必有收获) <small>

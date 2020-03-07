@@ -6,6 +6,7 @@ image:  10.jpg
 tags:   [Power BI,PowerApps,Office 365]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 *注：本文旨在介绍Power BI如何利用PowerApps实现用户在前端对数据源进行增删查改，关于此，你也可以在Google上找到更详细但较零散的资料*

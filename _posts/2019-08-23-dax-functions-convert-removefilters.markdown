@@ -6,6 +6,7 @@ image:  12.jpg
 tags:   [Power BI,DAX]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg
+level: 入门
 ---
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191208170445417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)

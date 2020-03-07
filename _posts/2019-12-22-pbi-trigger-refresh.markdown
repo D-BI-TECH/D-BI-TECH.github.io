@@ -6,6 +6,7 @@ image:  07.jpg
 tags:   [Report Server,SQL Server,Power BI]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 ***注：了解包括PowerBI的最新资讯，或有相关技术问题，请关注知乎[微软BI圈](https://www.zhihu.com/club/1189912932908257280?ab_signature=CiRBS0Fqc2xNRUNSQkxCZklPdmJXSGxBY1ZYWmN0WEQ2RURRaz0SIGE5MTkyMTI2ODM3MTJlZmY5ZjgxNTkxNGRhZjYzZjIxGhAIARIGNi4yNC4xGgQxNzky)。有资讯一起共享，有问题发帖讨论！***

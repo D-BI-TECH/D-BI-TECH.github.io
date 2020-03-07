@@ -6,6 +6,7 @@ image:  12.jpg
 tags:   [Report Server,SQL Server,Power BI]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 *【前述：本文主要讲解如何在Power BI 报表服务器中，为Power BI报表设置邮件订阅服务】*

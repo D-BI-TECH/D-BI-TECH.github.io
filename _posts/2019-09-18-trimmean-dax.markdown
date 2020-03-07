@@ -6,6 +6,7 @@ image:  13.jpg
 tags:   [Power BI,DAX]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg
+level: 进阶
 ---
 
 <small>[原文](https://xxlbi.com/blog/trimmean-dax/)译注：Davis ZHANG  </small>

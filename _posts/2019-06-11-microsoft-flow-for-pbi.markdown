@@ -6,6 +6,7 @@ image:  06.jpg
 tags:   [Power BI,Power Automate,Office 365]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 入门
 ---
 
 <small>*前述：Microsoft Flow和Power BI都属于微软Power平台的一部分。在微软Power平台的[官网](https://powerplatform.microsoft.com/en-us/)，你可以看到关于该平台的以下介绍：*<small>

@@ -6,6 +6,7 @@ image:  05.jpg
 tags:   [SSAS,SQL Server,Power BI]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 对于经常处理大量数据且其PowerBI报表不需要每次都刷新整个数据集的用户而言，增量刷新一直都是个问题，特别是对于那些没有条件使用Premium空间的用户以及在本地报表服务器发布报表的用户。一个稳定可靠的方法是利用SSAS表格模型的既有功能去突破PowerBI本身的局限性，具体实现的方法，简而言之，就是让Power BI以实时连接的方式连接到SSAS表格模型数据库，因此刷新数据时不需要依赖Power BI本身，而依赖于数据处理功能更强大的SSAS--利用分区策略解决增量刷新。

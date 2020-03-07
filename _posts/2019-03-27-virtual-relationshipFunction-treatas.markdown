@@ -6,6 +6,7 @@ image:  09.jpg
 tags:   [Power BI,Power Pivot,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 入门
 ---
 
 ## 简述

@@ -6,6 +6,7 @@ image:  12.jpg
 tags:   [Power BI,可视化]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 一、简述

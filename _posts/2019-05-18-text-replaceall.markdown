@@ -6,6 +6,7 @@ image:  03.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg
+level: 入门
 ---
 
 <small>[原文](https://xxlbi.com/blog/text-replaceall/)译注：Davis ZHANG  </small>

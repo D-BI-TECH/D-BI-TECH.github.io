@@ -6,6 +6,7 @@ image:  13.jpg
 tags:   [Power BI,DAX,可视化]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 <small>*关于本文内容，本是此前有人提出过类似问题，后来自己想到了一种解决办法，觉得可以拿出来分享一下，因此就写了这篇短文。希望能够帮到有需要的人。*<small>

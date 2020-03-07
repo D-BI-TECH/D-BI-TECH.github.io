@@ -3,9 +3,10 @@ layout: post
 title:  PBI Report Builder 简介
 date:   2019-05-15 06:03:50 +0000
 image:  01.jpg
-tags:   [Power BI,SSRS]
+tags:   [Power BI,SSRS,分页报表]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 入门
 ---
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190515153758883.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
@@ -38,7 +39,7 @@ Report Builder不仅可以使用SQL获取数据库数据，而且还可以调用
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190515153924243.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
 **4.发布到Power BI Report Server后，可以使用邮件订阅的方式把报表分享给组织成员**
-（*如果是使用Power BI Desktop做出的报表，在此处不具备邮件订阅功能*）
+（*如果是使用Power BI Desktop做出的报表，在此处不具备邮件订阅功能，但通过设置额外的SQL脚本作业也可实现，参考[此文]({{site.baseurl}}/email-subscription-pbi-reportserver/)*）
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190515153946716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 

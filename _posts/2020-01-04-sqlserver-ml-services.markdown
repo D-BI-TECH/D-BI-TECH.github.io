@@ -6,6 +6,7 @@ image:  08.jpg
 tags:   [SQL Server,Python]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 困难
 ---
 
 新年第一篇，去旧迎新。本文内容，既旧也新。旧之处在于，[SQL Server 机器学习服务](https://docs.microsoft.com/en-us/sql/advanced-analytics/what-is-sql-server-machine-learning?view=sql-server-ver15)是微软在SQL Server 2016 中就引入的新功能，但当时只支持R语言，所以也称为"R Server"，在SQL Server 2017及后续版本中，提供了对Python的支持，因此，现称为"Machine Learning Services(机器学习服务)"的功能自发布至今为止已有两年多的时间，故而这并不算一个新功能。而新的地方在于，此功能自发布起国内资料极少，一方面使用较旧版本SQL Server的用户依然很多，另一方面是很多人对该功能缺乏了解，然而，机器学习算法可以对数据进行深度挖掘，这对企业BI智能化的意义非常大，将AI融入BI也是企业未来实现商业智能的大方向。

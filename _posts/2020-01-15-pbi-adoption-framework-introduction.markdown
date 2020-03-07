@@ -6,6 +6,7 @@ image:  09.jpg
 tags:   [Power BI,数据文化]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 无
 ---
 
 ### 什么是Power BI Adoption Framework

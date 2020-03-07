@@ -6,6 +6,7 @@ image:  06.jpg
 tags:   [DAX,SSAS,统计学]
 author-name: Phil Seamark
 author-image: Phil.jpg
+level: 困难
 ---
 
 

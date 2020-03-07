@@ -6,6 +6,7 @@ image:  01.jpg
 tags:   [Power BI,Power Query]
 author-name: Daniil Maslyuk
 author-image: Daniil.jpg
+level: 进阶
 ---
 
 <small>[原文](https://xxlbi.com/blog/power-bi-dataflows-considerations/)译注：Davis ZHANG  </small>

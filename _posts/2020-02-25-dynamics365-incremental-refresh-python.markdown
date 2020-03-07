@@ -6,6 +6,7 @@ image:  13.jpg
 tags:   [Python,Dynamics 365,Power BI]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 ### 问题

@@ -6,6 +6,7 @@ image:  11.jpg
 tags:   [DAX,SSAS]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 *【前述：根据微软Power BI排期,原本只能在SSAS 2019中使用的DAX特性--CalulationGroup,将在今年的Desktop中发布。本文将围绕CalulationGroup,言简意赅的讲解它的概念,以及它在PBI报表中具体是如何被应用的,能为我们带来什么。】*

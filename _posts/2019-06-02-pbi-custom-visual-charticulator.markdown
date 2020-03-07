@@ -6,6 +6,7 @@ image:  05.jpg
 tags:   [Power BI,可视化]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 <small>*前述：在报表项目中，开发出符合特定需求的可视化控件是十分必要的，但对于大多数Power BI用户来讲，没有编程背景，开发的过程将是耗时而痛苦的。 Charticulator[见尾注]自去年八月发布以来，广受好评，它允许没有编程背景的人，在短短两分钟内开发出一个自定义视觉控件，并且可以导出到Power BI使用(正如开发者所说："Charticulator"是为缺乏编程技能的人设计的，其中可能包括设计师、记者和分析师)，也可以支持数据筛选。然而，国内用户中了解Charticulator的人并不多，但这确实是一个很值得使用的可视化工具*<small>

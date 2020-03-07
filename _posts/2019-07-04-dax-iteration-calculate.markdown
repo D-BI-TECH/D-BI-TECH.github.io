@@ -6,6 +6,7 @@ image:  09.jpg
 tags:   [Power BI,Power Pivot,SSAS,DAX]
 author-name: Davis ZHANG
 author-image: Davis.jpg
+level: 进阶
 ---
 
 一、循环迭代的难处

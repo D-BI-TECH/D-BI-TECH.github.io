@@ -10,7 +10,7 @@ level: 入门
 ---
 
 
-本文主要讲述分页报表的设计方法，并默认您已阅读过上一篇文章（PBI Report Builder 系列 数据集配置）或已经掌握在Report Builder连接数据源及配置数据集。
+本文主要讲述分页报表的设计方法，并默认您已阅读过上一篇文章（[PBI Report Builder 系列 数据集配置]({{site.baseurl}}/pbi-reportbuilder-dataset/)）或已经掌握在Report Builder连接数据源及配置数据集。
 
 ### 内容概览
 
@@ -126,7 +126,7 @@ Report Builder 提供两种构建表格的方法，手工构建与使用向导�
 
 配置完成后会自动生成以下DAX查询语句。此处有一个也许你从未用过的DAX函数RSCustomDaxFilter，该函数实际上是专用于Report Builder的DAX函数（即使在SSAS 2019也没有），其实对于以下查询，你完全可以用Filter代替，但该函数的意义何在？其作用在于处理多选。如果你有一个数据集，包含100家店铺，你需要从中选择十家店铺，在Power BI, 你不需要Filter函数，因为它有筛选上下文机制可以轻松处理这种多选，然而在Report Builder中却做不到Power BI那么简单，对应的操作都需要DAX函数完成，故而此情况下DAX查询会随着多选项数的增加而愈发复杂，在Chris Webb的[此篇博客](https://blog.crossjoin.co.uk/2019/11/03/power-bi-report-builder-and-rscustomdaxfilter/)中也提到了DAX查询的长度限制问题以及可能导致的报错，因此RSCustomDaxFilter函数就是专门用于应对Report Builder中的这种特殊情况而设计的。
 
-```
+```SQL
 EVALUATE 
 SUMMARIZECOLUMNS('标签'[标签1], 
     RSCustomDaxFilter(@标签标签,EqualToCondition,[标签].[标签1],String), 

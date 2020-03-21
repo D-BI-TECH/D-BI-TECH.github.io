@@ -31,7 +31,7 @@ level: 入门
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200320225903424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 
-为了提供实操演示，我特地到Azure开启试用了Power BI Premium，如下图，我的Power BI工作区已经是Premium工作区了（你可以看到钻石标识），但依然在在发布时遇到了错误，报错信息提示我们需要为该工作区开启分页报表工作负载：
+为了提供实操演示，我特地到Azure开启试用了Power BI Premium，如下图，我的Power BI工作区已经是Premium工作区了（你可以看到钻石标识），但依然在发布时遇到了错误，报错信息提示我们需要为该工作区开启分页报表工作负载：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020032101073325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
 

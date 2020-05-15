@@ -110,4 +110,4 @@ Common Data Services可以整合多种数据源, 包括关系型数据库, Excel
 
 ### 其他: 关于CDS数据接口(API)
 
-Common Data Service的数据接口与Dynamics 365基本相同, 使用了基于Odata(开放数据协议) 4.0版本的WEB API, 因此你可以使用自己熟悉的语言通过调用该接口获取CDS中的数据, 官方文档提供了[C#版本的使用教程](https://docs.microsoft.com/zh-cn/powerapps/developer/common-data-service/webapi/quick-start-console-app-csharp), 如果你希望使用Python, 可以参考我此前发布的一篇[关于使用Dynamics 365数据接口]({{site.baseurl}}/2020-02-25-dynamics365-incremental-refresh-python/)的文章, 需要注意一定要事先在Azure AD为应用分配好权限. 
+Common Data Service的数据接口与Dynamics 365基本相同, 使用了基于Odata(开放数据协议) 4.0版本的WEB API, 因此你可以使用自己熟悉的语言通过调用该接口获取CDS中的数据, 官方文档提供了[C#版本的使用教程](https://docs.microsoft.com/zh-cn/powerapps/developer/common-data-service/webapi/quick-start-console-app-csharp), 如果你希望使用Python, 可以参考我此前发布的一篇[关于使用Dynamics 365数据接口]({{site.baseurl}}/dynamics365-incremental-refresh-python/)的文章, 需要注意一定要事先在Azure AD为应用分配好权限. 

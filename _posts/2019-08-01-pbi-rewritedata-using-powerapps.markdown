@@ -3,7 +3,7 @@ layout: post
 title:  PowerApps助力PowerBI实现数据写回
 date:   2019-08-01 06:03:50 +0000
 image:  10.jpg
-tags:   [Power BI,PowerApps,Office 365]
+tags:   [Power BI,PowerApps,Power Platform]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶

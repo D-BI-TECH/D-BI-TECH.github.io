@@ -13,7 +13,7 @@ level: 入门
 
 ### 概念: 什么是CDS?
 
-CDS, 全称Common Data Services(公用数据服务), 按照[文档](https://docs.microsoft.com/zh-cn/powerapps/maker/common-data-service/data-platform-intro)的说法, 有如下几点:
+CDS, 全称Common Data Service(公用数据服务), 按照[文档](https://docs.microsoft.com/zh-cn/powerapps/maker/common-data-service/data-platform-intro)的说法, 有如下几点:
 
 - CDS可以安全地存储和管理业务应用程序使用的数据
 - Common Data Service 内的数据存储在一组实体中。 实体是一组用于存储数据的记录，类似于表在数据库中存储数据

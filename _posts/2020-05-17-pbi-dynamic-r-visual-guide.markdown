@@ -5,7 +5,7 @@ date:   2020-05-17 03:03:50 +0000
 image:  08.jpg
 tags:   [Power BI,R,可视化]
 author-name: Davis ZHANG
-author-image: Davis.jpgs
+author-image: Davis.jpg
 level: 进阶
 ---
 

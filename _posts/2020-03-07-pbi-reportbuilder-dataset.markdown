@@ -49,19 +49,19 @@ level: 入门
 
 出现下图界面表明连接成功，你可以在你的Power BI工作区中任选一个数据集作为测试：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307204929798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307204929798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 如果你在Power BI Services没有任何数据集，你也可以连接本地Power BI数据集，有经验的用户或许已经想到了DAX Studio这个强大工具，没错，通过DAX Studio可以使你知道本地Power BI数据集的端口号，这样你就可以通过该地址，使用SSAS的方式连接到本地Power BI数据集：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307220954153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307220954153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
-本文选择PowerBI Blog Union作为演示，该数据集即"Power BI中文博客联盟”这个报表所使用的数据集，该数据集是利用PowerQuery获取来自知乎及网站不同作者的文章数据。接下来配置数据集：
+本文选择PowerBI Blog Union作为演示，该数据集即"[Power BI中文博客联盟]({{site.baseurl}}/pbi-cn-blog-union/)”这个报表所使用的数据集，该数据集是利用PowerQuery获取来自知乎及网站不同作者的文章数据。接下来配置数据集：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030720542890.PNG)
 
 你会进入到以下界面，我用不同颜色的方框作为标识来讲解：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307210640252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307210640252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 - 底部的灰色方框用于设置连接超时限制，此处通常保持默认值。
 
@@ -74,11 +74,11 @@ level: 入门
 
 选择”Query Designer"后，进入下图界面：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307214100848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307214100848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 无论你选择使用DAX还是MDX作为查询语言，都无需担心，因为你可以通过拖拽的方式在右边空白处构建数据集，系统为为你自动生成查询语句。但由于连接的是Power BI数据集，本质上是SSAS表格模型，因此使用DAX作为查询语句性能更好。构建数据集的方式是，在左侧选择必要的维度，然后在"Measures“中选择度量值作为数值，这里的Measures都是你在Power BI Desktop中设置的：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030721523066.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030721523066.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 拖拽后点击上方感叹号执行查询，那么你会看到右侧的数据，它显示了知乎多位作者不同领域的文章计数，你还可以在上图红框处设置过滤，比如排除空值。点击OK后，系统自动为你生成如下语句:
 
@@ -96,7 +96,7 @@ SUMMARIZECOLUMNS (
 
 至此，数据集已配置完成，你可以在设计报表时直接使用这些字段了，但请注意，数据并未导入报表，这和Power BI不同，如在序篇中所述:"只有用户在使用报表的时才会执行查询",我们在此只是定义了一种关系，报表设计在字段定义层面进行，而不需要依赖数据本身。这使得分页报表文件(.rdl)即使用于大数据项目依然能保持本身的轻量化，如果是在Power BI，意味着你需要把上亿行的数据先导入再进行处理，极大降低了报表开发的效率，当然，除非你愿意使用问题更多的DirectQuery。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307221516231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200307221516231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 
 ### 结语

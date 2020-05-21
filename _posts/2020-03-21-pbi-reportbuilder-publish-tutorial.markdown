@@ -24,28 +24,28 @@ level: 入门
 
 如需将分页报表发布到Power BI Service,只需选择另存到Power BI Service即可。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200320230049603.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200320230049603.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 但可惜的是，截至目前（2020年3月），Power BI Service对分页报表的支持仅限于Premium用户，如果你的Power BI账户是免费版或Pro版，你将在发布时收到下图报错：
 （已经有接近四千人投票，希望分页报表能够在Pro  Lincense账户上得到支持了，你可以[点此](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/35959420-paginated-reports-please-make-it-available-in-pr)参与投票）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200320225903424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200320225903424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
-为了提供实操演示，我特地到Azure开启试用了Power BI Premium，如下图，我的Power BI工作区已经是Premium工作区了（你可以看到钻石标识），但依然在发布时遇到了错误，报错信息提示我们需要为该工作区开启分页报表工作负载：
+为了提供实操演示，我特地到Azure开启试用了Power BI Premium，如下图，我的Power BI工作区已经是Premium工作区了（你可以看到钻石标识），但依然在在发布时遇到了错误，报错信息提示我们需要为该工作区开启分页报表工作负载：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020032101073325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020032101073325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 通过查阅官方文档，意识到了并不是所有Premium账户都可以将分页报表托管在Power BI Service（准确说是Azure Cloud）的残酷事实，只有Power BI Premium SKU A4及其以上才能在工作区开启分页报表工作负载，如下所示SKU A4，接近六千美元，不是每年，而是每月，对于大多数企业而言都是一笔不小的开销：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321012430815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321012430815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 因此，我只好把原来的SKU A1（默认选项）修改为SKU A4的版本，现在终于可以将分页报表发布到Power BI Service了：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321020836427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321020836427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 对于使用本地数据库作为数据源的分页报表，记得提前配置好网关。在工作区打开分页报表，如下图所示，现在，我们已经成功实现在Power BI Service上使用分页报表了！
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321021359584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321021359584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ### 本地部署
 
@@ -56,7 +56,7 @@ level: 入门
 你也可以直接在Report Builder中发布报表，但这需要你使用SSRS版的Report Builder, 而非Power BI Report
  Builder. 在SSRS版Report Builder，你可以使其连接到报表服务器，然后你就可以在Report Builder直接将报表另存到服务器中。你还可以选择"Publish Report Parts"发布报表中的单个图表，以供他人或后续重复利用。
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321171131469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321171131469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ### 混合部署
 
@@ -64,15 +64,15 @@ level: 入门
    
  实现方法是，打开报表服务器配置管理器，在“Power BI服务(云)选项卡中注册Power BI：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174445702.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174445702.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
  回到Power BI Report Server门户网站，在”我的设置“处登录Power BI，这样你就可以在打开分页报表后看到钉选到Power BI的标志：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174828317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174828317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
  然后你将可以设置最高每小时一次的更新频率：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174944917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321174944917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
  点击固定后，你就可以在Power BI Service上看到该分页报表的磁贴了，混合部署至此完成。
 

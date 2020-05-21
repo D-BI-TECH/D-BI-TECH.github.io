@@ -23,7 +23,7 @@ level: 进阶
 
 *注：对于数据库，本文以SQL Server为例, 但如果您所在的组织使用的是基于云端的Azure SQL Database，那么很幸运，微软提供的[数据汇出服务](https://docs.microsoft.com/en-us/previous-versions/Dynamicscrm-2016/developers-guide/mt788315%28v=crm.8%29?redirectedfrom=MSDN)可以很好的解决与Dynamics 365之间的数据同步问题*
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224151801924.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224151801924.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 也许你会有疑问，为什么非要把数据拖到数据库中进行中转，难道没有别的更简单的方法吗？作为针对企业实施的BI方案，数据存储到数据库是最规范的做法，而且，数据拖过来，别人也可以用，其他的报表工具也可以用，何乐而不为？也许你还有另一个疑问，虽然解决了Power BI增量刷新的问题，但从Dynamics 365到SQL Server的过程中，由于数据源依然是使用Odata协议的，是不是还是要依靠全量刷新？这是个好问题，实际上，本文所述的解决方案是完全增量的，你会在下文中具体了解到利用[Dynamics 365 Web API](https://docs.microsoft.com/es-es/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9)的查询函数来获取前一日或满足某一特定条件的数据的方法。
 
@@ -33,7 +33,7 @@ level: 进阶
 
 根据上文思路，我绘制了一个简单的流程图，这也是对实现过程的一个概括：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022515313776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022515313776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 由于在Power BI上设置增量刷新的方法，官方文档已有详细说明，因此本文不再赘诉，重点将放在前半段：**利用Python脚本从Dynamics 365获取数据，增量更新到SQL Server 数据库中**。
 
@@ -41,17 +41,17 @@ level: 进阶
 
 Python作为外部程序，要想调取Dynamics 365的数据，需要提供Access Token（获取令牌），而获取Access Token，则不仅需要提供您的Dynamics 365的账户和密码，还需要在Azure Active Directory中创建一个应用，以获取对应的Client ID及Client Secret，首先[登录Azure](https://portal.azure.com)，详细的操作过程可以参考[此文](https://passion4Dynamics.com/2018/12/17/register-Dynamics-crm-app-with-azure-for-oauth-2-0-authentication/)，此处对其做几处关键补充，其一是Client Secret的获取位置参考下图（在value处即为Client Secret）：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224163346574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224163346574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 其二是，如果你不是您组织的Azure AD管理员，那么你需要获得管理员的许可，在非管理员界面下，API权限分配的选项是灰色的（见下图“Grant admin consent for ```<XXX>```”），因此你需要管理员登录此界面点击此项以为该应用激活API权限。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022416430128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022416430128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 最后，在后续的代码中还需要利用到OAuth 2.0 token endpoint，你可以参考下图以获取此链接：
 
 *注：实际上即https://login.microsoftonline.com/```<你的租户ID>```/oauth2/v2.0/token*
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224165228421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200224165228421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 #### 2.利用Python获取访问令牌，以获得访问D365数据的权限
 

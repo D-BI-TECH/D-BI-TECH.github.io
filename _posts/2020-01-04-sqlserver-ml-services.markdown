@@ -11,7 +11,7 @@ level: 困难
 
 新年第一篇，去旧迎新。本文内容，既旧也新。旧之处在于，[SQL Server 机器学习服务](https://docs.microsoft.com/en-us/sql/advanced-analytics/what-is-sql-server-machine-learning?view=sql-server-ver15)是微软在SQL Server 2016 中就引入的新功能，但当时只支持R语言，所以也称为"R Server"，在SQL Server 2017及后续版本中，提供了对Python的支持，因此，现称为"Machine Learning Services(机器学习服务)"的功能自发布至今为止已有两年多的时间，故而这并不算一个新功能。而新的地方在于，此功能自发布起国内资料极少，一方面使用较旧版本SQL Server的用户依然很多，另一方面是很多人对该功能缺乏了解，然而，机器学习算法可以对数据进行深度挖掘，这对企业BI智能化的意义非常大，将AI融入BI也是企业未来实现商业智能的大方向。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205614147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205614147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 本文将首先讲述机器学习服务（以Python为例）的概念，意义以及其基本应用原理，简单讲讲它的安装和部署方面的相关问题，最后会提供一个教程讲解其具体的应用方法。
 
@@ -37,7 +37,7 @@ level: 困难
 
 在SQL Server中安装了机器学习服务后，在SQL Server 配置管理器中会出现一个名为"SQL Server Launchpad"的服务，此即为SQL Server用于执行外部脚本（Python或R）的服务，官方提供的运行流程如下图所示，在此不一一赘述，详情可参考[此文档](https://docs.microsoft.com/en-us/sql/advanced-analytics/concepts/extensibility-framework?view=sql-server-ver15)：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205650130.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205650130.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 *（注：关于revoscalepy, 这是一个由微软开发的Python机器学习库，它提供了一些常用的机器学习算法，如决策树，线性回归以及Logistic回归等），支持分布和远程计算环境，详见[文档](https://docs.microsoft.com/en-us/sql/advanced-analytics/python/ref-py-revoscalepy?view=sql-server-ver15)）*
 
@@ -49,7 +49,7 @@ level: 困难
 
 安装此功能，你需要打开SQL Server Installation Center,进入安装向导，添加Machine Learning Services及Python两项功能，你可以参考[官方文档](https://docs.microsoft.com/en-us/sql/advanced-analytics/install/sql-machine-learning-services-windows-install?view=sql-server-ver15)了解详细的安装过程。如果你在安装过程中遇到问题导致安装失败，你可以参考[此文档](https://docs.microsoft.com/en-us/sql/advanced-analytics/known-issues-for-sql-server-machine-learning-services?view=sql-server-ver15)，该文档详细列出出了可能遇到的问题以及解决建议。离线安装机器学习服务参考[此文档](https://docs.microsoft.com/en-us/sql/advanced-analytics/install/sql-ml-component-install-without-internet-access?view=sql-server-ver15)，在该文档提到你需要下载两个CAB文件放置在你的安装根目录中：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205722734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200104205722734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 如果你的SQL Server不是初始版本（RTM)，那么在安装过程中需要提供的两个CAB文件需要和你的SQL Server具体版本相对应（查SQL Server具体版本的命令：SELECT @@VERSION），[此页面](https://docs.microsoft.com/zh-cn/sql/advanced-analytics/install/sql-ml-cab-downloads?view=sql-server-ver15)提供了完整的SQL Server累计更新中各版本对应的CAB文件下载的下载地址。
 

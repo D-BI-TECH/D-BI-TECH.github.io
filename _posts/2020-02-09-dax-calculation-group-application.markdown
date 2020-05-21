@@ -29,7 +29,7 @@ level: 进阶
  
 首先介绍本文使用微软官方提供的AdventureWork2017作为数据源进行建模,主要表格关系如下示：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208205319212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208205319212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 然后,在应用场景之下,你可能会想,CalulationGroup最主要的作用是什么？它大幅减轻了DAX代码维护成本,在越复杂的报表项目中,可能涉及到要建立许多个度量值时,这种作用的优势越明显,此外,它还增强了对数据格式控制的灵活性。在下文中,我将使用CalulationGroup为Power BI报表实现三种效果,这些效果不仅是在应用中经常需要实现的,还可以很好的表现其优势：
 
@@ -39,7 +39,7 @@ level: 进阶
  
 最终效果的静态展示图如下：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200209000825729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200209000825729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
  
 ##### 1. 建立多个度量值,其中包括销量,销售额,税后销售额,成本及利润,并为每个度量值计算其上月值,上月环比,去年当月值,去年同比以及度量值本身的值。
 
@@ -109,11 +109,11 @@ IF(ISBLANK(LAST_YEAR),0,LAST_YEAR)
 
 在Power BI前端,选择任意月份,效果如下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020020822441210.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020020822441210.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 这里可以发现一个问题,即计算项并未按照我在度量值组中所设定的顺序显示,这时就需要设定CalulationGroup中第二列的值,即ordinal参数,该参数的设定在使用Visual Studio 2019开发环境中的SSAS中不可见,因此需要在模型部署的源代码中补上这一参数(相信未来在Power BI中关于CalulationGroup的设定能够更加友好),设置后效果如下：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208230156324.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208230156324.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ##### 2.实现数据可以依据不同的日期字段进行切换：根据订单日期,根据发货日期以及根据截止日期
 
@@ -210,15 +210,15 @@ IF(ISSELECTEDMEASURE([Sales Qty]),
 
 至此,我们即可实现所有效果,但事情到此尚未结束,在下图中你会发现在计算销售额的MOM和YOY时出现计算错误：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208235649720.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200208235649720.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 之前所设定的公式都是没有问题的,但为何会出现错误呢？原因是在计算环比和同比时,所基于的数据是本币数据,而非转换为人民币,美元或者欧元后的数值,因此罪魁祸首是对CalulationGroup的优先级的错误设定。我们需要让数据先转换为指定货币,然后再执行计算。因此这里需要将CalulationGroup 3的优先级设为最低,CalulationGroup 2其次。如下图所示,数据得到完美的纠正：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200209000705808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200209000705808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 报表最终如下：
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020020900451420.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020020900451420.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ### 总结
 

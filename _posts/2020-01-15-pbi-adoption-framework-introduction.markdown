@@ -25,7 +25,7 @@ Power BI Adoption Framework（简称AF）是近期引入的一个全新概念，
 2.ON-BOARD 达成一致  
 3.DRIVE VALUE 价值驱动  
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114224922110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114224922110.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ##### ENVISION 愿景
 
@@ -47,7 +47,7 @@ Power BI Adoption Framework（简称AF）是近期引入的一个全新概念，
 3. Security 安全性
 4. Rollout ＆Support 部署与支持
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020011500123488.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020011500123488.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 这里会涉及到很多个方面，比如赞助，是高层赞助还是某个业务部门赞助；又比如分工，谁负责培训，谁负责数据清洗或建模，谁负责连接业务与技术开发合适的数据架构等等；治理方面：如何管理自助式BI文化，如何实现数据民主化；安全性方面：Power BI如何安全地存储您的数据，对于不同的报表和数据集，哪些用户拥有权限，如何分配用户权限等；部署与支持方面：License如何分配, 如何建立内部的BI支持团队等等。此处内容众多，需要会议反复商讨达成一致。
 
@@ -59,7 +59,7 @@ Power BI Adoption Framework（简称AF）是近期引入的一个全新概念，
 3. Adoption 采用。用户获得产品带来的价值，规律性地采用解决方案
 4. Proficiency 精通。用户熟练使用Power BI等产品，充分利用整个BI解决方案，能够用数据创造价值，并改变了他们的业务决策行为。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115005604241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115005604241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ### 总结与拓展
 

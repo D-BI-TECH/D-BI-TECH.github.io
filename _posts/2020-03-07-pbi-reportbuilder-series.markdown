@@ -15,7 +15,7 @@ level: 入门
 
 一年前，在Power BI Report Builder 发布不久，我曾发表了一篇[关于该工具的完整介绍](https://d-bi.gitee.io/introduction-pbi-reportBuilder/)，是当时国内外最早一批讲述PBI Report Builder的文章（当时微软还没有发布关于此的官方文档），对于该报表工具，业内普遍的理解是：一款可以发布到Power BI Services的SSRS Report Builder，确实如此，但在近一年的数次版本迭代后，该工具作为Power BI Services体系的一部分已渐趋成熟。过去，人们的关注点都集中在Power BI报表领域，鲜有人关注并了解分页报表，在新一轮的自助式BI浪潮前，传统BI显得有些落寞。但根据我最近的观察，国外已经有小部分用户开始主动关注分页报表了，重要的是，这部分人并非传统意义的IT开发者，而是新兴的Power BI用户，传统的BI外壳已经开始注入了新的活力。因此对于国内BI用户而言，无论你服务于小公司还是大企业，对分页报表仅仅局限于了解已经不够，你还要掌握如何去使用它。
 
-![图片来自Microsoft Power BI Blog](https://img-blog.csdnimg.cn/20200307173259561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![图片来自Microsoft Power BI Blog](https://img-blog.csdnimg.cn/20200307173259561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 <small>(微软官方博客提供的分页报表效果图，仅供参考）</small>
 

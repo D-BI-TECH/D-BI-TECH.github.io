@@ -33,7 +33,7 @@ level: 进阶
 - 标黄部分, 实现可以控制是否显示日均线以及日均线的切换(图中黄色曲线)
 - 标蓝部分, 此部分可以实现让用户控制是否显示股市熔断的标记以及定点分析(此处还实现了判断所选股市是否有熔断机制,如果没有则不显示的效果), 其实现原理与前两个步骤相通, 本文不再赘述, 留读者自行发挥
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517182820913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517182820913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 #### 1.绘制蜡烛图, 网格线及坐标轴
 
@@ -91,7 +91,7 @@ p
 
 效果如下:
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517191752578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517191752578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 #### 2. 添加自定义辅助线(或标记)
 
@@ -112,7 +112,7 @@ axis(side=2,at=dataset$CloseIndex[N],labels=round(dataset$CloseIndex[N],digits=2
 
 效果如下:
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517201821937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517201821937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 #### 3. 利用DAX建立度量值控制R可视化
 
@@ -153,13 +153,13 @@ lines(c(1:N),dataset$MA_Value,col="yellow",type='l',lwd=0.5)
 
 如下, 日均线成功添加, 不仅如此, 还可以通过切片器切换显示不同的日均线, 这里的一个重要原理是切片器通过传参的方式将值传递给了度量值"MA_Value", 度量值又将值传递给R Visual最后出图(关于DAX部分还是推荐[参考此文](https://d-bi.gitee.io/enhance-Chart-Interactivity/)): 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517203612584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517203612584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 同时, 还实现了用户控制显示或隐藏日均线的效果, 如下图所示, 取消勾选"显示日均线"以实现隐藏效果: 
 
 (注: 此处利用公式中:IF(ISFILTERED(PARA_SHOW_MA[NAME]),_MA,BLANK())实现)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517204720770.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517204720770.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ##### 进阶案例: 切换颜色规则案例
 
@@ -225,11 +225,11 @@ IF(_R,1,-1)*'FACT_STOCK'[CloseIndex]
 
 这样就成功实现颜色规则应用了。如下所示，切换颜色规则前：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/202005172115395.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/202005172115395.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 切换颜色规则后:
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517211652385.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200517211652385.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 ### 总结
 

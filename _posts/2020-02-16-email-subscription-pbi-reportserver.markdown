@@ -13,7 +13,7 @@ level: 进阶
 
 如果你使用过Power BI Report Server 或 SSRS，我想你也许了解在报表服务器中可以为[分页报表](https://docs.microsoft.com/en-us/sql/reporting-services/reports/reporting-services-reports-ssrs?view=sql-server-ver15)设置邮件订阅服务，以实现报表使用者可以定期通过E-MAIL收到报表附件或报表链接（如果你不了解具体如何配置邮件订阅服务，那么你可以参考[此文]({{site.baseurl}}/Deployment-configuration-pbi-report-server/)），然而遗憾的是，截至目前最新版本（2020年1月版本），在Power BI报表服务器的门户网站中，并未提供为Power BI报表设置邮件订阅服务的功能，如下图对比所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215150127730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215150127730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 然而在云端部署的Power BI Services中，邮件订阅及分享PBI报表的功能却是早在三年前就已经推出的基本特性。相比Power BI而言，微软对本地部署的Power BI (RS)一直未有积极的跟进，但这不代表用户就没有需求，相反，很多公司希望Power BI报表能够和分页报表一样，可以在报表服务器实现邮件订阅，统一管理。
 
@@ -109,7 +109,7 @@ GO
 
 将上文执行存储过程的代码粘贴到“step”中，最后根据你的需求设置好订阅的时间计划即可：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215163318427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215163318427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 至此，Power BI报表的邮件订阅就设置完成了，如果你要为其他用户订阅其他的报表，只需要填写好对应的参数即可，你也可以填写多个收件人，如果你能熟练使用SQL，通过改进原存储过程还可以实现更加强大的效果，实现全局的，自定义化程度高，多人共享的企业报表订阅解决方案。
 
@@ -117,7 +117,7 @@ GO
 
 此外，在存储过程中你能发现我使用了HTML对邮件进行排版，上文所示仅是最基本最简单的格式，你完全可以利用HTML为你的订阅邮件进行美化。如下图在原基础上添加图片及加粗部分文字：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215171117262.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_d3d3LmQtYmkudGVjaA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200215171117262.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 如果你没有学过HTML或者懒于书写冗长的HTML标签也是没有关系的，有一个技巧是，你可以在Word中为你的邮件排版，然后以HTML格式另存，在文本编辑器中直接复制代码即可。你完全可以根据组织或你个人的偏好定制更加规范、简洁、美观的报表订阅邮件。
 

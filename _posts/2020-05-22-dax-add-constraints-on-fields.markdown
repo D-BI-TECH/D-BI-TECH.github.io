@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  DAX进阶：为字段添加约束
-date:   2020-05-21 03:03:50 +0000
+date:   2020-05-22 03:03:50 +0000
 image:  09.jpg
 tags:   [DAX,Power BI]
 author-name: Davis ZHANG

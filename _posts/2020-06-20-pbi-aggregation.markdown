@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Power BI 的大数据处理方案：聚合
-date:   2020-06-19 03:03:50 +0000
+date:   2020-06-20 03:03:50 +0000
 image:  11.jpg
 tags:   [Power BI,DAX Studio]
 author-name: Davis ZHANG

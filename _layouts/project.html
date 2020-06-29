@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/magnific-popup.css"/>
+<!--//添加评论系统-->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
+
+<div class="container"  style="position:relative;padding-top:6%;">
+	<div class="row">
+		<article class="col col-12 col-t-12 post">
+			<div class="post-content">
+
+				<div class="post-head">
+					{% if page.tags.size >= 1 %}
+					{% endif %}
+					<p><img src="{{site.baseurl}}/img/project.png" width="1781" height="417"/></p>
+					<!--<h1 class="post-title">{{ page.title | escape }}</h1>-->
+					<div class="post-info">
+					
+					    <div class="post-info-author">
+							<div class="info-author-avatar" style="background-image: url({{"/img/davis.jpg" | prepend: site.baseurl  }})">
+							</div>
+								<span>by</span>
+								<span class="info-author-name">{{site.author-name | escape }}</span>
+						</div>
+						<div class="post-date">
+							&ensp;
+							<i class="fa fa-eye">
+							
+							</i>
+							<span id="busuanzi_container_page_pv">
+								&ensp;阅读&ensp;(<span id="busuanzi_value_page_pv"></span>)
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-body">
+					{{ content }}
+				</div>
+			</div>
+
+
+	</article> <!-- /.post -->
+	</div>
+</div>

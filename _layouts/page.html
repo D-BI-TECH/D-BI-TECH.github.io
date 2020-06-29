@@ -1,32 +1,32 @@
 ---
 layout: default
 ---
-<script>
-function changeFrameHeight(){
-    var ifm= document.getElementById("iframepage"); 
-    ifm.height=document.documentElement.clientHeight;
-}
-</script>
 
+<link rel="stylesheet" href="{{ site.baseurl }}/css/magnific-popup.css"/>
+<!--//添加评论系统-->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
 
-<div class="container" style="position:relative;padding-top:6%;">
+<div class="container"  style="position:relative;padding-top:6%;">
 	<div class="row">
-		<article class="col col-12 col-t-10 push-t-1 page">
-			<div class="page-content" id="iframepage">
-				<div class="page-head">
-					<h1 class="page-title">Power BI 中文博客联盟</h1>
+		<article class="col col-12 col-t-12 post">
+			<div class="post-content">
+
+				<div class="post-head">
+					{% if page.tags.size >= 1 %}
+					{% endif %}
+					<p><img src="{{site.baseurl}}/img/duang.png" width="1781" height="417"/></p>
+					<!--<h1 class="post-title">{{ page.title | escape }}</h1>-->
+					<div class="post-info">
+					</div>
 				</div>
-				<html>
-					<body>
-						<div style="position:relative;padding-top:66.6%;">
-							<iframe id="pbiframe" allowtransparency="true"  src="https://app.powerbi.com/view?r=eyJrIjoiOTA4OWQ3NWEtYjhlZi00NDQ1LWI3MjQtMGJiNDZhNzA3MDk3IiwidCI6IjAwM2ViMjA5LTc0NjQtNGVhNy1hOTcxLWFlMWQyMmI5NGFiNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-						</div>
-					</body>
-				</html>
-				<div class="page-body">
+
+				<div class="post-body">
 					{{ content }}
 				</div>
 			</div>
-		</article> <!-- /.page -->
+
+
+	</article> <!-- /.post -->
 	</div>
 </div>

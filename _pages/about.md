@@ -1,5 +1,5 @@
 ---
-layout: subscribe
+layout: page
 title: 关于
 permalink: /about/
 ---
@@ -46,7 +46,7 @@ permalink: /about/
 -------
 
 本人是一名BI工程师及数据分析爱好者  
-<small>（同时也是摄影，长跑爱好者及SWITCH & PlayStation玩家）<small>  
+<small>（同时也是摄影，长跑爱好者及Switch & Steam玩家）<small>  
 
 目前主要领域为:
 

@@ -10,7 +10,7 @@ level: 进阶
 ---
 
 
-*本文将会分享一个我在过去做的一个ETL作业实时监控的报表项目，它利用Power BI Report Server (PBIRS) 直连 SQL Server 中的 SSIS数据库，实现对SSIS作业流的监控与管理。下文分享了项目的大体流程和现成代码。*
+*本文将会分享一个我曾经做的一个ETL作业实时监控的报表项目，它利用Power BI Report Server (PBIRS) 直连 SQL Server 中的 SSIS数据库，实现对SSIS作业流的监控与管理。下文分享了项目的大体流程和现成代码。*
 
 ### 效果预览
 
@@ -113,4 +113,4 @@ SELECT  [operation_message_id]
 
 ### 在最后
 
-接下来只需要完成可视化的部分即可。此外，该方案不仅适用于针对于本地部署的PBIRS，使用云端版Power BI Desktop, 只需要配置好本地网关，即可发布到Power BI Service使用。
+接下来只需要完成可视化的部分即可。你还可以举一反三，继续探索SSIS数据库的其他有用信息。此外，该方案不仅适用于针对于本地部署的PBIRS，使用云端版Power BI Desktop, 只需要配置好本地网关，即可发布到Power BI Service使用。

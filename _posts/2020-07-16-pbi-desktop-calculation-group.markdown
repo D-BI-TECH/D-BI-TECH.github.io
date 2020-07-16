@@ -45,11 +45,19 @@ level: 入门
 ### 更多参考
 
 【2019-6-18】【英】[《度量值组介绍》](https://www.sqlbi.com/articles/introducing-calculation-groups/)
+
 【2019-6-17】【英】[《理解度量值组》](https://www.sqlbi.com/articles/understanding-calculation-groups/)
+
 【2019-7-11】【英】[《理解计算项的应用》](https://www.sqlbi.com/articles/understanding-the-application-of-calculation-items/)
+
 【2019-7-18】【英】[《理解度量值组优先级》](https://www.sqlbi.com/articles/understanding-calculation-group-precedence/)
+
 【2020-2-9】【中】 [《DAX：度量值组概念与应用》](https://d-bi.gitee.io/dax-calculation-group-application/)
+
 【2020-3-26】【英】[《在度量值组中控制格式字符串》](https://www.sqlbi.com/articles/controlling-format-strings-in-calculation-groups/)
+
 【2020-4-17】【英】[《在PBI Premium及AAS设置度量值组》](https://www.kasperonbi.com/adding-calculation-groups-to-aas-or-pbi-premium/)
+
 【2020-4-21】【英】[《避免度量值组优先级的陷阱》](https://www.sqlbi.com/articles/avoiding-pitfalls-in-calculation-groups-precedence/)
+
 【2020-7-15】【英】[《使用Tabular Editor在Power BI Desktop创建度量值组》](https://www.sqlbi.com/tv/creating-calculation-groups-in-power-bi-desktop-using-tabular-editor/)

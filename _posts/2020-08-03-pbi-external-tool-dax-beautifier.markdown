@@ -66,7 +66,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803114654732.png)
 
-由王信信（知识星球：[Power BI朋友圈社区](http://powerbiquan.com/)星主）提供的赞助
+由PBI Quan（知识星球：[Power BI朋友圈社区](http://powerbiquan.com/)）提供的赞助
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803114617795.jpg)
 

@@ -15,7 +15,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 事实上，该工具早在2个月前已开发完成，但由于当时PBID尚未迎来7月的更新，还没有加入外部工具这一功能，因此当时的方案是需要手动解压PBIX或PBIT文件，然后运行程序修改文件夹下的DataModelSchema，将文件中的DAX代码替换为经过美化的DAX代码，通过这种方式来实现PBI文件全部DAX代码美化的效果（具体原理参考[《一分钟格式化所有DAX及M语句》](https://d-bi.gitee.io/dax-m-formatter-tool/)）。
 
-现在有了外部工具，我就可以使程序直接和Analysis Services进行交互了。过去，一些第三方工具，如Tabular Eidtor对AS模型只能做到Read-Only，而现在可以支持将修改直接应用到PBID，尽管该工具使用.NET进行开发，那么理论上我使用Python也能够实现该效果（而并非像某些人说的需要权限）。尽管除了Tabular Eidtor开放的源代码之外几无资料可供参考，幸运的是，我在不到两天的时间里摸索出了具体方法。就在上周五（7月31日），DAX Beautifier正式诞生，它完美地实现了所有DAX公式（无论是计算表，计算列还是度量值）的一键美化！
+现在有了外部工具，我就可以使程序直接和Analysis Services进行交互了。过去，一些第三方工具，如Tabular Eidtor对AS模型只能做到Read-Only，而现在可以支持将修改直接应用到PBID，尽管该工具使用.NET进行开发，那么理论上我使用Python也能够实现该效果（而并非像某人说的需要权限）。尽管除了Tabular Eidtor开放的源代码之外几无资料可供参考，幸运的是，我在不到两天的时间里摸索出了具体方法。就在上周五（7月31日），DAX Beautifier正式诞生，它完美地实现了所有DAX公式（无论是计算表，计算列还是度量值）的一键美化！
 
 ### 下载与安装
 
@@ -23,7 +23,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 安装：跟随向导即可，如下。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803110303755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803110303755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 
 
@@ -33,15 +33,15 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 1.请确认你的Power BI Desktop的版本支持外部工具（版本号应不小于：2.83.5894.661）。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803110918521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803110918521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 2.确认你已为PBID开启增强元数据集：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803111024197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803111024197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 3.确保你的表格模型能够正常的连接到数据源（若出现类似下图情况则可能导致工具失效）：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803111231330.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803111231330.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 4.确保您报表所在的设备能够连接到互联网。由于该工具的DAX代码美化需要依赖于[daxformatter.com](https://www.daxformatter.com/)提供的API接口，您报表的每一个DAX公式的格式化都相当于发送了一次post请求，因此无法连接到互联网或中途网络断开连接都可能会导致代码美化的失败。
 

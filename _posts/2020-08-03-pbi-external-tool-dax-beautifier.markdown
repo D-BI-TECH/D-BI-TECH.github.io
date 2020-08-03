@@ -22,6 +22,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 下载：目前提供的是第一个版本的测试版（v1.0.0 beta) ,可[点此到达](https://github.com/DavisZHANG-BlogOnly/dax-beautifier)。后续的版本也会发布到此地址。
 
 安装：跟随向导即可，如下。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803110303755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0Nzk0NzE0,size_16,color_FFFFFF,t_70)
 
 

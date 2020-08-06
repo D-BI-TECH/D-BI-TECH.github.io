@@ -51,7 +51,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 该工具的使用可参考如下视频（已上传至[知乎](https://www.zhihu.com/zvideo/1273579251229470720)）：
 
 
-<iframe width="100%" height="500px" allow="autoplay" src="https://player.youku.com/embed/XNDc3OTkyODE3Mg==?client_id=644f9cfcb7c5a867&amp;password=&amp;autoplay=false#cloud.youku.com" name="iframeId" id="iframeId" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+<iframe width="500px" height="315px" allow="autoplay" src="https://player.youku.com/embed/XNDc3OTkyODE3Mg==?client_id=644f9cfcb7c5a867&amp;password=&amp;autoplay=false#cloud.youku.com" name="iframeId" id="iframeId" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
 
 
 ### 已知问题

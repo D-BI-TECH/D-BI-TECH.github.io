@@ -15,7 +15,7 @@ permalink: /project/
 
 - ### 【已发布】Power BI 外部工具 - DAX Beautifier  <small><small>[[详情]](https://d-bi.gitee.io/pbi-external-tool-dax-beautifier/)  [[下载]](https://github.com/DavisZHANG-BlogOnly/dax-beautifier)  <a href="{{site.baseurl}}/img/qr.jpg" class="test-popup-link">[赞助]</a></small></small>
 
-Power BI 可视化控件：Candlestick, 基于R语言包GGPlot2开发，用于分析股市或期货历史数据，提供了图表缩放及自定义工具提升等功能，对金融相关工作人员或学生将十分有用。
+Power BI 外部工具 - DAX Beautifier, 基于Python开发，用于一键格式化PBI文件内所有DAX公式。
 
 当前版本：1.0.1
 

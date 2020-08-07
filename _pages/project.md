@@ -13,18 +13,19 @@ permalink: /project/
 
 ---------------------
 
-- ### 【已开源】DAX & M 批量格式化工具  <small><small>[[详情]](https://d-bi.gitee.io/dax-m-formatter-tool/)  <a href="{{site.baseurl}}/img/qr.jpg" class="test-popup-link">[赞助]</a></small></small>
-
-Power BI开发者工具：DAX & M 批量格式化工具，可助你一次性格式化PBIX或PBIT文件内的所有DAX及M代码，可显著提升代码的可读性与报表开发效率。
-
-当前版本：测试版(Beta)
-
----------------------
 - ### 【已发布】Power BI 外部工具 - DAX Beautifier  <small><small>[[详情]](https://d-bi.gitee.io/pbi-external-tool-dax-beautifier/)  [[下载]](https://github.com/DavisZHANG-BlogOnly/dax-beautifier)  <a href="{{site.baseurl}}/img/qr.jpg" class="test-popup-link">[赞助]</a></small></small>
 
 Power BI 可视化控件：Candlestick, 基于R语言包GGPlot2开发，用于分析股市或期货历史数据，提供了图表缩放及自定义工具提升等功能，对金融相关工作人员或学生将十分有用。
 
 当前版本：1.0.1
+
+---------------------
+
+- ### 【已开源】DAX & M 批量格式化工具  <small><small>[[详情]](https://d-bi.gitee.io/dax-m-formatter-tool/)  <a href="{{site.baseurl}}/img/qr.jpg" class="test-popup-link">[赞助]</a></small></small>
+
+Power BI开发者工具：DAX & M 批量格式化工具，可助你一次性格式化PBIX或PBIT文件内的所有DAX及M代码，可显著提升代码的可读性与报表开发效率。
+
+当前版本：测试版(Beta)
 
 ---------------------
 

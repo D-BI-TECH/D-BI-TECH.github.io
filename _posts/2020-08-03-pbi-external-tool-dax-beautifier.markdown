@@ -15,7 +15,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 事实上，该工具早在2个月前已开发完成，但由于当时PBID尚未迎来7月的更新，还没有加入外部工具这一功能，因此当时的方案是需要手动解压PBIX或PBIT文件，然后运行程序修改文件夹下的DataModelSchema，将文件中的DAX代码替换为经过美化的DAX代码，通过这种方式来实现PBI文件全部DAX代码美化的效果（具体原理参考[《一分钟格式化所有DAX及M语句》](https://d-bi.gitee.io/dax-m-formatter-tool/)）。
 
-现在有了外部工具，我就可以使程序直接和Analysis Services进行交互了。过去，一些第三方工具，如Tabular Eidtor对AS模型只能做到Read-Only，而现在可以支持将修改直接应用到PBID，尽管该工具使用.NET进行开发，那么理论上我使用Python也能够实现该效果（而并非像某人说的需要权限）。尽管除了Tabular Eidtor开放的源代码之外几无资料可供参考，幸运的是，我在不到两天的时间里摸索出了具体方法。就在上周五（7月31日），DAX Beautifier正式诞生，它完美地实现了所有DAX公式（无论是计算表，计算列还是度量值）的一键美化！
+现在有了外部工具，我就可以使程序直接和Analysis Services进行交互了。过去，一些第三方工具，如Tabular Eidtor对AS模型只能做到Read-Only，而现在可以支持将修改直接应用到PBID，尽管该工具使用.NET进行开发，那么理论上我使用Python也能够实现该效果（而并非像某些人说的需要权限）。尽管除了Tabular Eidtor开放的源代码之外几无资料可供参考，幸运的是，我在不到两天的时间里摸索出了具体方法。就在上周五（7月31日），DAX Beautifier正式诞生，它完美地实现了所有DAX公式（无论是计算表，计算列还是度量值）的一键美化！
 
 ### 下载与安装
 
@@ -45,24 +45,28 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 4.确保您报表所在的设备能够连接到互联网。由于该工具的DAX代码美化需要依赖于[daxformatter.com](https://www.daxformatter.com/)提供的API接口，您报表的每一个DAX公式的格式化都相当于发送了一次post请求，因此无法连接到互联网或中途网络断开连接都可能会导致代码美化的失败。
 
-5.(补充)基于目前最新版本（2020年7月）的测试，如果你的数据模型**只有**计算表（如使用DATATABLE()或EnterData构造的表），而没有连接任何额外的数据源，那么该模型的兼容级别会被定为1465，此时模型将是**只读**的，此情况下格式化将不会生效（包括Tabular Editer在内的外部工具同样无法将修改应用到模型）。从任意数据源导入数据可以解决问题。
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200806223651682.png)
-
 
 ### 使用演示
 
 该工具的使用可参考如下视频（已上传至[知乎](https://www.zhihu.com/zvideo/1273579251229470720)）：
 
+<iframe width="100%" height=500 allow="autoplay" src="https://player.youku.com/embed/XNDc3OTkyODE3Mg==?client_id=644f9cfcb7c5a867&amp;password=&amp;autoplay=false#cloud.youku.com" name="iframeId" id="iframeId" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
 
-<iframe width="100%" height="315px" allow="autoplay" src="https://player.youku.com/embed/XNDc3OTkyODE3Mg==?client_id=644f9cfcb7c5a867&amp;password=&amp;autoplay=false#cloud.youku.com" name="iframeId" id="iframeId" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+### 限制
 
+在当前PBID版本（2020年7月），受制于计算表的兼容级别，针对于计算表内的计算列的格式化无效。
 
-### 已知问题
+*该问题可能会在后续版本解决*
+
+### 问答
 
 问：为何我使用DAX Beautifier后,我的报表中的DAX并无任何变化，并且我已满足前述的所有前提条件。
 
 答：在个别情况下，DAX Beautifier返回的格式化的结果不会立即反映到Power BI Desktop内，但此时模型内部的格式化已经完成，你可以保存报表并重启PBID进行验证。如果情况依然未解决，请刷新数据集后重试。此外，如果您的公式本身具有语法错误，那么他将保留原来的格式而不会被美化。
+
+### 后续版本
+
+本文基于最初版本1.0.0编写，后续版本可能有变化，请留意本项目Github页面的[更新说明](https://github.com/DavisZHANG-BlogOnly/dax-beautifier#updated)。
 
 ### 鸣谢
 
@@ -70,7 +74,7 @@ DAX Beautifier是由本人（Davis.Z) 开发的一款Power BI Desktop外部工�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803114654732.png)
 
-由PBI Quan（知识星球：[Power BI朋友圈社区](http://powerbiquan.com/)）提供的赞助
+由王信信（知识星球：[Power BI朋友圈社区](http://powerbiquan.com/)星主）提供的赞助
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200803114617795.jpg)
 

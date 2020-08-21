@@ -33,11 +33,11 @@ level: 无
 
 (发布：2020-8-13)
 
-1. 更改了DAX Beautifier的安装界面。
+1.更改了DAX Beautifier的安装界面。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817111908273.png)
 
-2. 更改了图标大小及其他细节。
+2.更改了图标大小及其他细节。
 
 
 ***End~***

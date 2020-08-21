@@ -3,7 +3,7 @@ layout: post
 title:  Azure Synapse Analytics核心技术解析(上)
 date:   2020-08-21 01:03:50 +0000
 image:  08.jpg
-tags:   [Azure]
+tags:   [Azure,Synapse Analytics]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶
@@ -13,7 +13,7 @@ level: 进阶
 
 Azure Synapse Analytics（以下简称Synapse Analytics）是Microsoft推出的一项将企业数据仓库和大数据分析结合在一起的，按需付费的，可随时拓展的集成分析服务。Synapse Analytics的推出很好地应用了现代企业数据架构【**One Service**】的理念，它集成了ADF，DW（SQL池），大数据框架Apache Spark，并且提供了一个统一的Studio界面（目前尚处于预览阶段）以便数据开发者，数据科学家及数据分析师进行共同协作。比如，作为数据开发，可以利用Azure Synapse Studio的管道（即ADF的集成）执行ETL作业，创建数据流，数据科学家可以利用Spark，使用他熟悉的语言（SQL,Python,Java等)训练ML模型，对大数据进行持续地分析。而数据分析师则可以在SQL池中建立存储过程，视图，建立BI报表（可与Power BI集成）实现数据可视化。因此可以简单地用一个公式作为总结：**Synapse Analytics = Azure SQL DW(数仓) + Azure Data Lake(用于大数据分析的数据湖） + ADF(数据集成服务)**.
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200821151943782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200821175922773.png#pic_center)
 
 ### 关于MPP数据处理架构
 
@@ -45,7 +45,7 @@ MPP的另一个要点是**数据分片**，它指的是控制节点如何向各�
 数据分片需要在创建表时使用我们熟悉的SQL语句指明，在SQL Pool你可以点击创建表，以Round Robin方法为例，如下所示：
 （关于在Synapse Analytics使用SQL语句，推荐参考[此文档](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-tsql-statements#data-definition-language-ddl-statements)）
 
-```SQL
+>```SQL
 CREATE TABLE [dbo].[DimCustomer] (  
     [CustomerKey] INT NOT NULL,  
     [GeographyKey] INT NULL,  
@@ -53,7 +53,7 @@ CREATE TABLE [dbo].[DimCustomer] (
 )  
 WITH (CLUSTERED COLUMNSTORE INDEX, 
 DISTRIBUTION = ROUND_ROBIN); 
-```
+>```
 
 ### 后续内容
 

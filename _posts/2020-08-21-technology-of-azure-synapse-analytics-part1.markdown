@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Azure Synapse Analytics核心技术解析(上)
+title:  Azure Synapse Analytics核心技术解析 (上)
 date:   2020-08-21 01:03:50 +0000
 image:  08.jpg
 tags:   [Azure,Synapse Analytics]

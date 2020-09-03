@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Azure Synapse Analytics:与PowerBI集成
+title:  Azure Synapse Analytics:与Power BI集成
 date:   2020-09-03 01:03:50 +0000
 image:  10.jpg
 tags:   [Azure,Synapse Analytics,Power BI]

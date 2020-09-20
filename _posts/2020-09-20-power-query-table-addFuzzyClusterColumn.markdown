@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PowerQuery 数据规范利器:Table.AddFuzzy ClusterColumn
+title:  PowerQuery 数据规范利器: Table.AddFuzzy ClusterColumn
 date:   2020-09-20 01:03:50 +0000
 image:  12.jpg
 tags:   [Power Query,Power BI]

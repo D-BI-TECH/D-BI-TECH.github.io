@@ -54,7 +54,7 @@ let
   #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars = true]),
   #"Changed Type" = Table.TransformColumnTypes(
       #"Promoted Headers", 
-      {{"EmployeeID", Int64.Type}, {"Location", type text}}
+      { {"EmployeeID", Int64.Type}, {"Location", type text} }
     ),
   #"Result" = Table.AddFuzzyClusterColumn(#"Changed Type", "Location", "Location_Cleaned")
 in

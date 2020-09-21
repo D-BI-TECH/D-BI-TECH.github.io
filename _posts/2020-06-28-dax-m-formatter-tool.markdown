@@ -3,7 +3,7 @@ layout: post
 title:  一分钟格式化所有DAX及M语句
 date:   2020-06-28 03:03:50 +0000
 image:  12.jpg
-tags:   [Power BI,DAX,PowerQuery]
+tags:   [Power BI,DAX,Power Query]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 入门

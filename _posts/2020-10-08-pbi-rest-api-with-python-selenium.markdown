@@ -162,7 +162,7 @@ requests.post(queryurl_refresh,headers=header)
 
 ### 演示
 
-这是D-BI博客网站近半年的文章目录，现在需要我们利用 REST API向数据集中添加一行数据作为测试, 下方视频展示了完整的实现过程。
+现在需要我们利用 REST API向数据集中添加一行数据作为测试, 下方视频展示了完整的实现过程。
 
 [视频: Power BI REST API 实战演示（Python）](https://www.zhihu.com/zvideo/1297479372132405248)
 

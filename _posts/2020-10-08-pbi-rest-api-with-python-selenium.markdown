@@ -11,6 +11,8 @@ level: 进阶
 
 *本文是D-BI之Power BI REST API系列第三篇，讲解如何利用一段简单的Python脚本实现Power BI REST API的调用，将使用与上文完全不同的方法*
 
+(封面：火星)
+
 ### 前述
 
 上文《[Power BI REST API实战教程：PowerQuery为例](https://d-bi.gitee.io/pbi-rest-api-with-powerquery/)》讲解了PBI API调用的经典方法，而本文将利用简短的Python脚本，更快捷，高效，简易地实现这个效果。在经典方法中，主要问题在于获取Access Token（访问令牌）较为麻烦，需要设置的地方较多，本文将会利用Python，免去自建Azure应用的麻烦，直接借用微软为我们提供的访问令牌来实现PBI API调用。

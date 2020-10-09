@@ -11,6 +11,8 @@ level: 进阶
 
 *本文是D-BI之Power BI REST API系列第二篇，讲解用经典的方式，即[文档](https://docs.microsoft.com/en-us/power-bi/developer/embedded/register-app)中介绍的方式来注册一个AzureAD应用，并通过此应用来访问和使用Power BI REST API，最终实现利用PowerQuery获取Power BI Service的所有数据集*
 
+（封面：三角座星系）
+
 ### 前述
 
 通过上文《[Power BI REST API有多强大？PBI开发者必读](https://d-bi.gitee.io/pbi-rest-api-introduction/)》我们得知PBI API带给我们的强大能力，但国内尚无任何使用PBI API的专门教程，尽管国外有较丰富的教程资料，比如David发布的《[Configuring Postman for Use with the Power BI REST API](https://dataveld.com/2020/05/09/using-postman-with-the-power-bi-rest-api/)》，但其中个别步骤已不能适用，而且也没有必要的注释来使大家避坑，因此本文以中文教程和避坑为亮点带领大家使用PBI API。需要注意的是，该技术的重点在于如何获取有效的访问令牌，只要能够做到这点，后期无论是使用Postman, Python, PowerShell还是PowerQuery来调用API，都是大同小异的。首先让我们注册一个PBI应用程序（亦可参照[文档](https://docs.microsoft.com/en-us/power-bi/developer/embedded/register-app)）。

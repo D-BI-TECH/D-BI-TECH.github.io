@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PBI Report Server建立报表警报机制
+title:  Power BI Report Server建立报表警报机制
 date:   2019-12-02 06:03:50 +0000
 image:  03.jpg
-tags:   [Report Server,SQL Server]
+tags:   [PBIRS,SQL Server]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶

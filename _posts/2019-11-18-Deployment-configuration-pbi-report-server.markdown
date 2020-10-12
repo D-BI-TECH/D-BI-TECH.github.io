@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PBI Report Server部署与配置详解
+title:  Power BI Report Server部署与配置详解
 date:   2019-11-18 06:03:50 +0000
 image:  01.jpg
-tags:   [Report Server,SSRS]
+tags:   [PBIRS,SSRS]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶

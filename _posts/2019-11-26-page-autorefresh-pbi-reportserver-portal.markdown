@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PBI Report Server报表页面自动刷新
+title:  Power BI Report Server报表页面自动刷新
 date:   2019-11-26 06:03:50 +0000
 image:  02.jpg
-tags:   [Report Server,SSRS]
+tags:   [PBIRS,SSRS]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶

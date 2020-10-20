@@ -62,7 +62,7 @@ in
 
 此处只需定义一个参数，完成两个步骤即可，按前文所述，过滤并重命名：
 
-```
+```SQL
 (ID_Code as text) => 
 let
 DATA = 
@@ -82,7 +82,7 @@ in
 
 我们需要让参数连续向函数传参，以便得到一份完整的表，因此需要取ID列并去重，以生成参数表：
 
-```
+```SQL
 let
     Source = DATA,
     #"Removed Columns" = Table.RemoveColumns(Source,{"Number"}),
@@ -106,7 +106,7 @@ in
 
 你也可以直接运行以下代码：
 
-```
+```SQL
 let
     Source = DATA,
     #"Removed Columns" = Table.RemoveColumns(Source,{"Number"}),
@@ -130,19 +130,19 @@ in
 
 运行查询，我们发现最新的列【D列】并未创建，这是因为在对NUMBER列进行展开时，其参数是固定的，我们需要让Table.ExpandTableColumn函数动态地获取完整的ID列表。这一步也不难，我们只需将参数表转换为列表，赋值给新变量【ID】：
 
-```
+```SQL
 ID = #"Removed Duplicates"[ID]
 ```
 
 然后将原来代码的以下部分：
 
-```
+```SQL
 = Table.ExpandTableColumn(#"Removed Columns1", "demo", {"ID", "A", "B", "C"})
 ```
 
 改成下方语句即可。
 
-```
+```SQL
 = Table.ExpandTableColumn(#"Removed Columns1", "demo", ID)
 ```
 

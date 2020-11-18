@@ -39,6 +39,19 @@ level: 无
 
 2.更改了图标大小及其他细节。
 
+### 版本 1.0.3
+
+该版本增加了对Power BI Report Server（PBIRS) 的支持。
+
+由于截至目前，PBIRS暂不支持外部工具，针对于此，DAX Beautifier新增了独立运行模式。
+
+你只需直接双击dax-beautifier.exe程序本体或其快捷方式即可快速完成所有DAX语句的格式化。
+
+*注意：该模式仅针对于PBIRS，如果你使用标准版PBID，你依然需要在External Tools选项卡处运行它。*
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201118101731544.png#pic_left)
+
+PBIRS版本要求：Power BI Report Server (2020年10月）或以上版本。
 
 ***End~***
 

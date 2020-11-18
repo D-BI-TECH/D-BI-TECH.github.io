@@ -41,6 +41,8 @@ level: 无
 
 ### 版本 1.0.3
 
+(发布：2020-11-18)
+
 该版本增加了对Power BI Report Server（PBIRS) 的支持。
 
 由于截至目前，PBIRS暂不支持外部工具，针对于此，DAX Beautifier新增了独立运行模式。

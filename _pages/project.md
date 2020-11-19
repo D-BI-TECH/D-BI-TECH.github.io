@@ -17,7 +17,7 @@ permalink: /project/
 
 Power BI 外部工具 - DAX Beautifier, 基于Python开发，用于一键格式化PBI文件内所有DAX公式。
 
-当前版本：1.0.2
+当前版本：1.0.3
 
 ---------------------
 

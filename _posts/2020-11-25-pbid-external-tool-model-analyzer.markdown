@@ -44,6 +44,7 @@ Model Analyzer全称Power BI Model Analyzer, 即Power BI模型分析器，你只
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201125164504274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70#pic_left)
 
 运行PBI Model Analyzer后，会打开一个PBIT文件，并弹出如下窗体，该文件会自动获取最近一次修改过的（通常也是正在运行的）PBIX文件内的表格模型的实例名称以及数据库名称（如前文所述），这大概需要10秒左右的加载时间。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201125164732358.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70#pic_left)
 
 在下拉框中选择自动获取的参数值即可。

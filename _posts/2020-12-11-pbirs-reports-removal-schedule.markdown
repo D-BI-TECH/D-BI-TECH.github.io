@@ -32,7 +32,7 @@ level: 进阶
 
 对于一份报表（此处我们特别指Power BI报表，因为部分以附件形式分发的分页报表其使用率难以被评估），每当BI团队之外的用户，在相当一段时间内没有访问某报表，此时系统自动向所有用户发送一封提示邮件，附上报表链接，并告诉用户是否继续需要使用此报表，否则报表会在某某日期后下线。如果在下线日期前, 没有任何用户再次访问该报表，那么系统强制性下线报表。
 
-![优化后的报表负载](https://img-blog.csdnimg.cn/20201211011806747.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
+![优化后的报表负载](https://img-blog.csdnimg.cn/20201211101957459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_RC1CSSB8IERhdmlzIG9uIEJJ,size_16,color_FFFFFF,t_70)
 
 *如图，实施该计划后，可大幅压缩闲置报表的占比*
 

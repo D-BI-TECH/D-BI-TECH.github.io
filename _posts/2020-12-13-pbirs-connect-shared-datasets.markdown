@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Power BI Report Server 连接共享数据集
-date:   2020-12-13 01:03:50 +0000
+date:   2020-12-13 00:03:50 +0000
 image:  23.jpg
 tags:   [PBIRS,Power BI]
 author-name: Davis ZHANG

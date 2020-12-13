@@ -63,7 +63,7 @@ http://<YOUR PBIRS URL>/Reports/api/v2.0/datasets(<YOUR SHARED DATASET ID>)/data
 
 可以。但需要为存储过程指定好默认参数，因为Power BI不能像分页报表一样可以允许用户在前端实现向后端的动态传参。
 
-*标准版（云端）Power BI 已在上个月推出了动态M语句预览功能，但局限性较大，关于此，后续会考虑写博客介绍*
+*标准版（云端）Power BI 已在今年10月底推出了[动态M语句](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-dynamic-m-query-parameters)预览功能，但局限性较大，关于此，后续会考虑写博客介绍*
 
 ##### 3.对于Power BI报表，共享数据集有什么意义，或者说有哪些适用场景？
 

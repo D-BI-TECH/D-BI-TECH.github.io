@@ -114,4 +114,4 @@ Power BI部署管道（deployment pipeline）即是微软针对Power BI报表, �
 
 -----------------
 
-**关注我： [知乎](https://www.zhihu.com/people/zhang-zhe-hong-01/posts)       [Power BI官方社区](https://community.powerbi.com/t5/user/viewprofilepage/user-id/220984)**
+**关注我： [知乎](https://www.zhihu.com/people/zhang-zhe-hong-01/posts)   ;    [Power BI官方社区](https://community.powerbi.com/t5/user/viewprofilepage/user-id/220984)**

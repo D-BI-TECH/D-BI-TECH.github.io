@@ -3,7 +3,7 @@ layout: post
 title:  Power BI Embedded 开发提要
 date:   2021-02-01 01:03:50 +0000
 image:  26.jpg
-tags:   [Power BI,ASP.NET]
+tags:   [Power BI,Azure,ASP.NET]
 author-name: Davis ZHANG
 author-image: Davis.jpg
 level: 进阶
@@ -12,7 +12,7 @@ level: 进阶
 
 本文主要讲解Power BI Embedded开发过程中的一些要点，包括文档中未明确提及的步骤，一些可能会遇到的BUG的解决方案，以及个别功能具体的实现方法。
 
-请注意，这是一篇**补充性**文章，既然是“提要”，自然不会是Step-by-Step的教程，我建议读者已对Power BI Embedded有了初步的了解。**跟随[官方文档]**(https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-sample-for-customers?tabs=net-framework)，并结合本文，相信能够**帮助大家在开发过程中更加顺利**，少走些弯路。文末还附上了相关教程链接，里面包含了更详尽的资料。
+请注意，这是一篇**补充性**文章，既然是“提要”，自然不会是Step-by-Step的教程，我建议读者已对Power BI Embedded有了初步的了解。**跟随[官方文档](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-sample-for-customers?tabs=net-framework)**，并结合本文，相信能够**帮助大家在开发过程中更加顺利**，少走些弯路。文末还附上了相关教程链接，里面包含了更详尽的资料。
 
 此外，以下所有内容均为“Embed for customers (App-owns-data)”, 如果是面向组织的嵌入式开发可参考[此文档](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-sample-for-your-organization)，然实际开发过程差异不大，本文亦可参考。
 
@@ -110,6 +110,31 @@ Install-Package Microsoft.Net.Compilers -Version 3.7.0-2.final
 
 解决方法：将安装好的Powerbi.javascript包中的script文件夹复制到项目根目录
 
+5.报表转换为编辑模式报错
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210201235649586.png)
+
+解决方法：
+
+JS
+
+```SQL
+//在Config追加
+permissions: models.Permissions.All
+```
+
+ASP.NET
+
+```SQL
+var generateTokenRequestParameters = new GenerateTokenRequest(TokenAccessLevel.View);
+```
+
+改为：
+
+```SQL
+var generateTokenRequestParameters = new GenerateTokenRequest(TokenAccessLevel.Edit);
+```
+
 *此处非常期待读者反馈您所遇到的问题，以及解决方案 (如果有) ，我会追加相关问题，以丰富这部分内容，帮助更多的人。*
 
 ### 【附1】特定功能实现方式
@@ -175,7 +200,7 @@ using (var client = new PowerBIClient(new Uri(Configurations.ApiUrl), Authentica
 
 [RADACAD Power BI Embedded文章系列](https://radacad.com/tag/power-bi-embedded)
 
-
+[Power BI Embedded 定价 (Azure版)](https://azure.microsoft.com/en-us/pricing/details/power-bi-embedded/)
 
 -----------------
 

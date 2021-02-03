@@ -11,7 +11,8 @@
             <i class="menu-close fa fa-times-circle"></i>
             <ul class="menu-list">
               <li class="menu-item"><a href="{{site.baseurl}}/" class="menu-link">博客</a></li>
-              {% for page in site.pages %}
+              {% assign sorted_pages = site.pages | sort:"order" %}
+              {% for page in sorted_pages %}
                 {% unless page.name == 'tags.html' or page.name == '404.html' %}
               {% if page.title %}
               <li class="menu-item"><a href="{{ page.url | prepend: site.baseurl }}" class="menu-link">{{ page.title }}</a></li>

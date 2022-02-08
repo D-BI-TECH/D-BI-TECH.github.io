@@ -109,4 +109,4 @@ Switch-PowerBIEncryptionKey -Name '<输入Key名称>' -KeyVaultKeyUri '<输入�
 
 -----------------
 
-**关注作者： [知乎](https://www.zhihu.com/people/zhang-zhe-hong-01/posts)   [Power BI官方社区](https://community.powerbi.com/t5/user/viewprofilepage/user-id/220984)**
+**关注作者： [知乎](https://www.zhihu.com/people/zhang-zhe-hong-01/posts)  . [Power BI官方社区](https://community.powerbi.com/t5/user/viewprofilepage/user-id/220984)**

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Power BI 企业数据安全 (BYOK与OLS)
-date:   2022-02-09 00:00:50 +0000
+date:   2022-02-08 22:30:50 +0000
 image:  28.jpg
 tags:   [Power BI,Azure Key Vault,Tabular Editor]
 author-name: Davis ZHANG

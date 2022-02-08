@@ -14,7 +14,7 @@ order: 1
 
 本站主要用于Davis ZHANG发表BI、数据处理分析以及可视化等相关原创内容，目前暂集中在微软BI,   
 初衷仅仅是整合个人的历史博客，现希望未来能在本站发表更多关于数据的有趣知识。本站亦接受投稿，      
-欲知投稿方式及其他相关信息可[邮件联系](mailto:daviszhang@189.cn)本人。 
+欲知投稿方式及其他相关信息可[邮件联系](mailto:daviszhang-dev@hotmail.com)本人。 
 
 - **标语** 
 
@@ -54,6 +54,7 @@ order: 1
 - Power BI
 - Power Query
 - Power Pivot
+- Power Automate
 - Report Builder
 - Python
 - SQL Server
@@ -61,7 +62,7 @@ order: 1
 - Office 365
 
 本人具有Microsoft BI部署经验，若有合作需求，欢迎由以下邮箱联系本人：  
-E-mail: daviszhang@189.cn  
+E-mail: daviszhang-dev@hotmail.com 
 
 <!--<img src="{{site.baseurl}}/img/cert.jpg" width="45%">-->
 

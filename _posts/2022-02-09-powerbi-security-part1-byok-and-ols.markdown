@@ -40,7 +40,7 @@ level: 进阶
 
 4.现在，将上一步创建好的密钥应用到PBI容量，目前没有界面可供设置，需要在PowerShell中键入命令
 
-```sql
+```Python
 --安装Cmdlets（已装跳过）
 Install-Module -Name MicrosoftPowerBIMgmt
 --登录
@@ -57,7 +57,7 @@ Set-PowerBICapacityEncryptionKey -CapacityId <输入容量ID> -KeyName '<输入K
 至此，BYOK即设置完成，输入以下命令检验：
 
 
-```sql
+```Python
 Get-PowerBIEncryptionKey
 ```
 
@@ -69,7 +69,7 @@ Get-PowerBIEncryptionKey
 
 6.秘钥轮换，可使用如下命令，若要实现定期轮换，可将其配置到已有应用程序，或直接使用Azure Key Vault 中 "Rotation Policy" 预览功能。
 
-```sql
+```Python
 Switch-PowerBIEncryptionKey -Name '<输入Key名称>' -KeyVaultKeyUri '<输入新的Key URI>'
 ```
 

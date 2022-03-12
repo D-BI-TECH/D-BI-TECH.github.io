@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Azure Log Analytics: 与Power BI集成
+title:  Azure Log Analytics:与Power BI集成
 date:   2022-03-12 10:03:50 +0000
 image:  30.jpg
 tags:   [Power BI,Azure Log Analytics]

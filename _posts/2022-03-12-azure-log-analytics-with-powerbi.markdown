@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Azure Log Analytics:与Power BI集成
-date:   2022-03-12 10:03:50 +0000
+date:   2022-03-12 08:03:50 +0000
 image:  30.jpg
 tags:   [Power BI,Azure Log Analytics]
 author-name: Davis ZHANG
